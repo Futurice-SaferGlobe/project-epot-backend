@@ -8,7 +8,7 @@ const { name: modName, version: modVersion } = require('../../package.json')
 program.version(modVersion).usage('<command> [options]')
 
 // tasks
-const { initDatabase } = require('../')
+const { initDatabase, setOperations } = require('../')
 
 program
   .command('database')
@@ -16,13 +16,35 @@ program
   .option('-p, --password <password>', 'password for the db.')
   .option('-d, --database <database>', 'database name.')
   .option('-c, --collection <collection>', 'collection name.')
-  .description('creates a new database and collection, skipping duplicates.')
+  .description(
+    'creates a new database and collection, cracefully catching duplicate errors.'
+  )
   .action(({ username, password, database, collection }) => {
     wrapCommand(initDatabase)({
       username,
       password,
       databaseName: database,
       collectionName: collection
+    })
+  })
+
+program
+  .command('operations [path]')
+  .option('-u, --username <user>', 'username for the db.')
+  .option('-p, --password <password>', 'password for the db.')
+  .option('-d, --database <database>', 'database name.')
+  .option(
+    '-c, --collection <collection>',
+    'the collection to set the operations to.'
+  )
+  // tslint:disable:no-shadowed-variable
+  .action(async (pathToJson, { username, password, database, collection }) => {
+    wrapCommand(setOperations)({
+      pathToJson,
+      username,
+      password,
+      database,
+      collection
     })
   })
 

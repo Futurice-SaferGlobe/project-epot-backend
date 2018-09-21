@@ -1,5 +1,5 @@
 // @ts-check
-const { Database } = require('arangojs')
+const { createDbConnection } = require('./utils')
 
 /**
  *
@@ -13,12 +13,13 @@ const { Database } = require('arangojs')
 async function initDatabase(opts) {
   try {
     if (!opts.url) opts.url = 'http://127.0.0.1:8529'
-    // Create connection
-    const connection = new Database({
-      url: opts.url
-    })
 
-    connection.useBasicAuth(opts.username, opts.password)
+    // Create connection
+    const connection = createDbConnection({
+      url: opts.url,
+      username: opts.username,
+      password: opts.password
+    })
     console.log(`connected to ${opts.url}`)
 
     // Create database
@@ -28,15 +29,11 @@ async function initDatabase(opts) {
 
     if (!isDatabaseExist) {
       await connection.createDatabase(opts.databaseName)
-      connection.useDatabase(opts.databaseName)
-      connection.useBasicAuth({
-        username: opts.username,
-        password: opts.password
-      })
       console.log(`database '${opts.databaseName}' created`)
     } else {
       console.log(`database '${opts.databaseName}' already exists. skipping...`)
     }
+    connection.useDatabase(opts.databaseName)
 
     // Create collection
     const collection = connection.collection(opts.collectionName)
@@ -45,9 +42,13 @@ async function initDatabase(opts) {
       .catch(err =>
         console.error(`error while creating collection:`, err.message)
       )
-    console.log(`collection '${opts.collectionName}' created`)
 
-    return { connection, [opts.collectionName]: collection }
+    console.log(
+      `collection '${opts.collectionName}' created ` +
+        `or left intact (if duplicate name was provided).`
+    )
+
+    return { connection, collection }
   } catch (err) {
     throw new Error(err)
   }
