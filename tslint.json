@@ -1,0 +1,16 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "no-console": false,
+    "no-unused-variable": true,
+    "no-var-requires": false,
+
+    // dumb rules, that shouldn't exist. just why...
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+
+    // TODO: These doesn't seem to work together with path aliases...
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": false
+  }
+}
