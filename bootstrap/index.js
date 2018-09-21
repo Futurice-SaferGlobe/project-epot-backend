@@ -1,0 +1,1 @@
+exports.initDatabase = require('./initDatabase')

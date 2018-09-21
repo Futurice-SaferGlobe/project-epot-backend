@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+// @ts-check
+const chalk = require('chalk').default
+const program = require('commander')
+// @ts-ignore
+const { name: modName, version: modVersion } = require('../../package.json')
+
+program.version(modVersion).usage('<command> [options]')
+
+// tasks
+const { initDatabase } = require('../')
+
+program
+  .command('database')
+  .option('-u, --username <user>', 'username for the db.')
+  .option('-p, --password <password>', 'password for the db.')
+  .option('-d, --database <database>', 'database name.')
+  .option('-c, --collection <collection>', 'collection name.')
+  .description('creates a new database and collection, skipping duplicates.')
+  .action(({ username, password, database, collection }) => {
+    wrapCommand(initDatabase)({
+      username,
+      password,
+      databaseName: database,
+      collectionName: collection
+    })
+  })
+
+program.parse(process.argv)
+
+function wrapCommand(fn) {
+  return (...args) => {
+    return fn(...args).catch(err => {
+      console.error(chalk.red(err.stack))
+    })
+  }
+}
