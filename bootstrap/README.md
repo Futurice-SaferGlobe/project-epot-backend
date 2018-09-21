@@ -1,3 +1,3 @@
-# Bootstrapping the database
+# Bootstrapping the Database
 
 ## TODO: Add documentation
