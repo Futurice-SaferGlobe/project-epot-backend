@@ -8,7 +8,6 @@
     "build": "run-p clean && webpack --config ./build/webpack.config.js",
     "dev": "yarn run build --watch",
     "clean": "trash dist",
-    "start:production": "NODE_ENV=production node -e \"console.log('TODO')\"",
     "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('Please install dependencies using Yarn.')\""
   },
   "devDependencies": {
