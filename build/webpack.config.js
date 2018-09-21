@@ -61,4 +61,11 @@ if (TARGET_ARGV('dev')) {
 } else if (TARGET_ARGV('build')) {
   // @ts-ignore
   module.exports = merge(commonConfig, require('webpack.prod.config'))
+} else {
+  const errMessage =
+    'Make sure to run webpack build using the scripts provided in package.json ' +
+    'In order for the config to choose between using development or production mode ' +
+    'the argument needs to be either `dev` or `build`. (e.g. `yarn run dev`)'
+
+  throw new Error(errMessage)
 }
