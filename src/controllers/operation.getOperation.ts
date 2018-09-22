@@ -1,5 +1,6 @@
 import { RequestHandler } from 'express'
 import logger from '@/logger/logger'
+import { aql } from 'arangojs'
 import { getDb } from '@/database'
 
 const operations = [
@@ -29,55 +30,21 @@ const operations = [
   }
 ]
 
-export const getOperation: RequestHandler = (req, res, next) => {
+export const getOperation: RequestHandler = async (req, res, next) => {
   try {
     const { operationId, section } = req.body
 
-    const opQuery = operations.find(({ operationId: id }) => id === operationId)
+    const db = getDb()
 
-    if (opQuery) {
-      const sectionQuery = opQuery.data.find(
-        ({ index }) => index === section[0]
-      )
+    const operationQuery = await db.query(aql`
+      FOR op IN operations
+        FILTER op.internalId == ${operationId}
+        RETURN op
+    `)
 
-      const subsectionQuery = sectionQuery
-        ? sectionQuery.subheaders.find(({ index }) => index === section[1])
-        : null
+    const { _rev, _id, ...result } = await operationQuery.next()
 
-      if (sectionQuery && subsectionQuery) {
-        // SUCCESS
-        const constructedRes = {
-          operation: opQuery.operation,
-          operationId: opQuery.operationId,
-          area: opQuery.area,
-          data: {
-            index: sectionQuery.index,
-            title: sectionQuery.title,
-            content: sectionQuery.content,
-            subheaders: [
-              {
-                index: subsectionQuery.index,
-                title: subsectionQuery.title,
-                content: subsectionQuery.content
-              }
-            ]
-          }
-        }
-
-        res.status(200).send(constructedRes)
-      } else {
-        res.status(404).send({
-          message:
-            `Couldn't find index of ` +
-            `${section[0]}.${section[1]} ` +
-            `in ${operationId}`
-        })
-      }
-    } else {
-      res
-        .status(404)
-        .send({ message: `Couldn't find operation of id ${operationId}.` })
-    }
+    res.status(200).send({ operation: result })
   } catch (err) {
     next(err)
   }
