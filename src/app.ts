@@ -2,6 +2,10 @@ import express from 'express'
 import bodyparser from 'body-parser'
 import cors from 'cors'
 import errorHandler from '@/utils/errorHandler'
+import { getDb } from '@/database'
+
+import operation from '@/routes/operation'
+import operations from '@/routes/operations'
 
 export const app = express()
 
@@ -13,10 +17,7 @@ app.use(bodyparser.json())
 app.use(cors())
 
 // routes
-import operation from '@/routes/operation'
 app.use('/operation', operation)
-
-import operations from '@/routes/operations'
 app.use('/operations', operations)
 
 // handle errors (fingers crossed)

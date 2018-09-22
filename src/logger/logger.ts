@@ -7,6 +7,7 @@ const { isProd } = constants
 const { combine, timestamp, label, printf } = winston.format
 
 const consoleFormat = printf(info => {
+  // TODO: error.message is in some cases undefined. (e.g. arango db)
   if (info.level === 'error') {
     return (
       chalk.gray('▸' + info.timestamp) +

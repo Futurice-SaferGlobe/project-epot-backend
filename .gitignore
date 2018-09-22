@@ -19,3 +19,7 @@ pids
 
 # Distribution code
 /dist/
+
+# arangodb storage data
+docker/arangodb/*
+!docker/arangodb/.gitignore

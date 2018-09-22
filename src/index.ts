@@ -4,13 +4,14 @@ import prettyjson from 'prettyjson'
 import { constants } from '@/constants'
 
 import logger from '@/logger/logger'
+import { initDb } from '@/database'
 
 const {
   isProd,
   server: { port: serverPort }
 } = constants
 
-export function runServer(port: number): Server {
+export async function runServer(port: number) {
   try {
     const server = new Server(app)
 
@@ -26,9 +27,11 @@ export function runServer(port: number): Server {
       }
     })
 
-    return server.listen(port)
-  } catch (error) {
-    logger.error('oopsie daisy')
+    await initDb()
+
+    server.listen(port)
+  } catch (err) {
+    logger.error(err)
   }
 }
 

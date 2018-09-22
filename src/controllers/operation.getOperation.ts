@@ -1,5 +1,6 @@
 import { RequestHandler } from 'express'
 import logger from '@/logger/logger'
+import { getDb } from '@/database'
 
 const operations = [
   {
