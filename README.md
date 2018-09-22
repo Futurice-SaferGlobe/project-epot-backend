@@ -58,9 +58,9 @@ We'll also populate the collection we just created.
 
 ```bash
 $ yarn run bootstrap operations ./operations.json \
---username root
---password root
---database epot
+--username root \
+--password root \
+--database epot \
 --collection operations
 ```
 
