@@ -60,7 +60,7 @@ if (TARGET_ARGV('dev')) {
   module.exports = merge(commonConfig, require('./webpack.dev.config'))
 } else if (TARGET_ARGV('build')) {
   // @ts-ignore
-  module.exports = merge(commonConfig, require('webpack.prod.config'))
+  module.exports = merge(commonConfig, require('./webpack.prod.config'))
 } else {
   const errMessage =
     'Make sure to run webpack build using the scripts provided in package.json ' +
