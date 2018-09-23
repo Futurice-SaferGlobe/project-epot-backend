@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "run-p clean && webpack --config ./build/webpack.config.js",
+    "build": "NODE_ENV=production run-p clean && webpack --config ./build/webpack.config.js",
     "dev": "run-p start:* && yarn run build --watch",
     "clean": "trash dist",
     "start:db": "docker-compose up -d",
