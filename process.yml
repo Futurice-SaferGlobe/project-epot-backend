@@ -1,0 +1,4 @@
+apps:
+  - name: epot
+    script: ./dist/main.server.js
+    cwd: /usr/app/dist
