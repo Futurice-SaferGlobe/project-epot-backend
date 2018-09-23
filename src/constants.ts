@@ -1,11 +1,13 @@
-import dotenv from 'dotenv-safe'
-
-dotenv.config({
-  path: '.env',
-  sample: '.env.example'
-})
+import path from 'path'
 
 const isProd = process.env.NODE_ENV === 'production'
+
+require('dotenv-safe').config({
+  path: isProd ? path.resolve('../.env') : path.resolve('./.env'),
+  sample: isProd
+    ? path.resolve('../.env.example')
+    : path.resolve('./.env.example')
+})
 
 interface IApplicationConstants {
   isProd?: boolean
@@ -24,9 +26,7 @@ const commonConstants: IApplicationConstants = {
   isProd,
   server: {
     port: 8080
-  }
-}
-const devConstants: IApplicationConstants = {
+  },
   db: {
     url: process.env.DB_URL,
     name: process.env.DB_NAME,
@@ -34,15 +34,9 @@ const devConstants: IApplicationConstants = {
     pass: process.env.DB_PASS
   }
 }
+const devConstants: IApplicationConstants = {}
 
-const prodConstants: IApplicationConstants = {
-  db: {
-    url: null,
-    name: null,
-    user: null,
-    pass: null
-  }
-}
+const prodConstants: IApplicationConstants = {}
 
 // tslint:disable:prefer-object-spread
 export const constants = Object.assign(
