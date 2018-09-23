@@ -73,6 +73,8 @@ $ yarn run bootstrap operations ./operations.json \
 --collection operations
 ```
 
+### Enviroment file
+
 One last thing - make an enviroment file called `.env` and fill out the fields as is shown in the `.env.example` file.
 
 ```
