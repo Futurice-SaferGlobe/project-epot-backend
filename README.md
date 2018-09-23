@@ -34,6 +34,19 @@ yarn run start:db
 
 ## Database
 
+### Enviroment file
+
+Make an enviroment file called `.env` and fill out the fields as is shown in the `.env.example` file.
+
+```
+DB_URL=http://127.0.0.1:8529
+DB_NAME=epot
+DB_USER=root
+DB_PASS=root
+```
+
+You'll obviously need to use different credentials in a production enviroment.
+
 ### Starting ArangoDB
 
 Before the server app works, you need to start the arangodb docker container.
@@ -73,18 +86,5 @@ $ yarn run bootstrap operations ./operations.json \
 --database epot \
 --collection operations
 ```
-
-### Enviroment file
-
-One last thing - make an enviroment file called `.env` and fill out the fields as is shown in the `.env.example` file.
-
-```
-DB_URL=http://127.0.0.1:8529
-DB_NAME=epot
-DB_USER=root
-DB_PASS=root
-```
-
-You'll obviously need to use different credentials in a production enviroment.
 
 That's it! Now just run `yarn run dev` to start the server.
