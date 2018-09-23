@@ -10,6 +10,7 @@ Node.js for server app, Docker for running ArangoDB in a container.
 
 - Node `^8.9.0`
 - Docker `^18.06.0-ce`
+- Docker Compose `1.22.0`
 
 > ### Make sure to follow the [database setup instructions](#database) if you're running the app for the first time.
 
