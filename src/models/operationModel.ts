@@ -10,8 +10,6 @@ export const queryOperations = async () => {
 
     const result = await opsQuery.next()
 
-    console.log(result)
-
     return result
   } catch (err) {
     throw new Error(err)
