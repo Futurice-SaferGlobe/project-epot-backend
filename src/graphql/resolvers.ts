@@ -1,8 +1,9 @@
-import { queryOperation } from '@/models/operationModel'
+import { queryOperation, queryOperations } from '@/models/operationModel'
 
 export const resolvers = {
   Query: {
     info: () => `Ping`,
+    operations: async () => queryOperations(),
     operation: async (_, { id }) => {
       try {
         return await queryOperation(id)
