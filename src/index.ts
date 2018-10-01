@@ -1,42 +1,41 @@
-import { app } from './app'
-import { Server } from 'http'
 import prettyjson from 'prettyjson'
-import { constants } from '@/constants'
+import { ApolloServer } from 'apollo-server-express'
 
+import { app } from './app'
+import { constants } from '@/constants'
 import logger from '@/logger/logger'
 import { initDb } from '@/database'
 
-const {
-  isProd,
-  server: { port: serverPort }
-} = constants
+import { resolvers, typeDefs } from './graphql'
 
 export async function runServer(port: number) {
   try {
-    const server = new Server(app)
-
-    server.on('error', error => {
-      throw error
+    const server = new ApolloServer({
+      typeDefs,
+      resolvers
     })
+    server.applyMiddleware({ app })
 
-    server.on('listening', () => {
-      if (!isProd) {
-        logger.info(`App is running at http://localhost:${port}`)
-        logger.info(isProd ? 'PRODUCTION' : 'DEVELOPMENT' + ' MODE')
-        console.log(prettyjson.render(constants) + '\n')
-      }
+    app.on('error', error => {
+      throw error
     })
 
     await initDb()
 
-    server.listen(port)
+    app.listen(port, () => {
+      if (!constants.isProd) {
+        logger.info(`App is running at http://localhost:${port}`)
+        logger.info('DEVELOPMENT MODE')
+        console.log(prettyjson.render(constants) + '\n')
+      }
+    })
   } catch (err) {
     logger.error(err)
   }
 }
 
-if (typeof constants === 'object' && typeof isProd === 'boolean') {
-  runServer(serverPort)
+if (typeof constants === 'object' && typeof constants.isProd === 'boolean') {
+  runServer(constants.server.port)
 } else {
   throw new Error('no valid constants')
 }
