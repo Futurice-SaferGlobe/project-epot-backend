@@ -11,7 +11,7 @@ export const typeDefs = gql`
     internalId: ID!
     name: String
     area: String
-    headers: [OperationHeader]
+    headers(index: Int): [OperationHeader]
   }
 
   type OperationHeader {
@@ -19,7 +19,7 @@ export const typeDefs = gql`
     title: String
     content: String
     labels: [String]
-    subheaders: [OperationSubHeader]
+    subheaders(index: Int): [OperationSubHeader]
   }
 
   type OperationSubHeader {

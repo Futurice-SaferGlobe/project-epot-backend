@@ -14,10 +14,12 @@ export const resolvers = {
 
   Operation: {
     name: root => root.operation,
-    headers: root => root.data
+    headers: (root, { index }) =>
+      index ? root.data.filter(d => d.index === index) : root.data
   },
 
   OperationHeader: {
-    subheaders: root => root.subheaders
+    subheaders: (root, { index }) =>
+      index ? root.subheaders.filter(s => s.index === index) : root.subheaders
   }
 }
