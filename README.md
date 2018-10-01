@@ -89,7 +89,7 @@ $ yarn run bootstrap operations ./operations.json \
 
 That's it! Now just run `yarn run dev` to start the server.
 
-### GraphQL
+## GraphQL
 
 In addition to the good ol' REST API, the backend also has a [GraphQL](https://graphql.org/) endpoint.
 
