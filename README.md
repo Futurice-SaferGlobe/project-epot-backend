@@ -88,3 +88,28 @@ $ yarn run bootstrap operations ./operations.json \
 ```
 
 That's it! Now just run `yarn run dev` to start the server.
+
+## GraphQL
+
+In addition to the good ol' REST API, the backend also has a [GraphQL](https://graphql.org/) endpoint.
+
+You can query operations through a [GraphQL Playground](https://www.apollographql.com/docs/apollo-server/features/graphql-playground.html) to familiarize yourself with this awesome query language. Just start the development server and navigate to <http://localhost:8080/graphql>
+
+Here's a simple query to get you started:
+
+```graphql
+query {
+  operation(id: "unamid") {
+    name
+    area
+    headers(index: 1) {
+      title
+      index
+      subheaders(index: 1) {
+        index
+        content
+      }
+    }
+  }
+}
+```

@@ -2,7 +2,6 @@ import express from 'express'
 import bodyparser from 'body-parser'
 import cors from 'cors'
 import errorHandler from '@/utils/errorHandler'
-import { getDb } from '@/database'
 
 import operation from '@/routes/operation'
 import operations from '@/routes/operations'
