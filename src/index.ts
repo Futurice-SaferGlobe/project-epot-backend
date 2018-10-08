@@ -24,7 +24,7 @@ export async function runServer(port: number) {
 
     app.listen(port, () => {
       if (!constants.isProd) {
-        logger.info(`App is running at http://localhost:${port}`)
+        logger.info(`🚀 App is running at http://localhost:${port}`)
         logger.info('DEVELOPMENT MODE')
         console.log(prettyjson.render(constants) + '\n')
       }
