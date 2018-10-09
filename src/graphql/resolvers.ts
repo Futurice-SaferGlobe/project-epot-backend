@@ -3,7 +3,20 @@ import { queryOperation, queryOperations } from '@/models/operationModel'
 export const resolvers = {
   Query: {
     info: () => `Ping`,
-    operations: async () => queryOperations(),
+    operations: async (_, { ids }) => {
+      try {
+        if (ids) {
+          if (Array.isArray(ids)) {
+            return ids.map(id => queryOperation(id))
+          } else if (typeof ids === 'string') {
+            return await queryOperation(ids)
+          }
+        }
+        return queryOperations()
+      } catch (err) {
+        throw err
+      }
+    },
     operation: async (_, { id }) => {
       try {
         return await queryOperation(id)
