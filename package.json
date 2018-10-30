@@ -43,6 +43,8 @@
   "dependencies": {
     "@types/commander": "^2.12.2",
     "@types/dotenv-safe": "^5.0.0",
+    "apollo-server": "^2.1.0",
+    "apollo-server-express": "^2.1.0",
     "arangojs": "5",
     "body-parser": "^1.18.3",
     "chalk": "^2.4.1",
