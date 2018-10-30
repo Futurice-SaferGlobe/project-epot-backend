@@ -1,5 +1,6 @@
 // @ts-check
 const { Database } = require('arangojs')
+const generate = require('nanoid/generate')
 
 /**
  * creates and returns a connection to the database.
@@ -19,3 +20,10 @@ exports.createDbConnection = ({ username, password, url }) => {
 
   return connection
 }
+
+const uidAllowedSymbols = '1234567890qwertyuiopasdfghjklzxcvbnm'
+exports.generateArrayMemberUids = array =>
+  array.map(member => ({
+    uid: generate(uidAllowedSymbols, 10),
+    ...member
+  }))
