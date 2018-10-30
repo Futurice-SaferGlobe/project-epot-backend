@@ -3,7 +3,7 @@ import { gql } from 'apollo-server-express'
 export const typeDefs = gql`
   type Query {
     info: String!
-    operations: [Operation!]
+    operations(ids: [ID]): [Operation]
     operation(id: ID!): Operation
   }
 
