@@ -5,10 +5,10 @@ export const queryOperations = async () => {
   try {
     const opsQuery = await getDb().query(aql`
       FOR op IN operations
-        RETURN [ op ]
+        RETURN op
     `)
 
-    const result = await opsQuery.next()
+    const result = await opsQuery.all()
 
     return result
   } catch (err) {
