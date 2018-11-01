@@ -5,6 +5,8 @@ export const typeDefs = gql`
     info: String!
     operations(ids: [ID]): [Operation]
     operation(id: ID!): Operation
+    operationConnection(id: ID!): OperationConnection
+    operationConnections(ids: [ID]): [OperationConnection]
   }
 
   type Operation {
@@ -15,6 +17,7 @@ export const typeDefs = gql`
   }
 
   type OperationHeader {
+    uid: ID!
     index: Int!
     title: String
     content: String
@@ -23,8 +26,20 @@ export const typeDefs = gql`
   }
 
   type OperationSubHeader {
+    uid: ID!
     index: Int!
     title: String
     content: String
+  }
+
+  type OperationConnection {
+    operationInternalId: ID!
+    connections: [OperationConnectionCollection]
+  }
+
+  type OperationConnectionCollection {
+    from: String
+    to: String
+    type: String
   }
 `

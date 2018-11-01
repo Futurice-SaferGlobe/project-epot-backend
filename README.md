@@ -67,7 +67,7 @@ f451fd549c97        arangodb/arangodb   "/entrypoint.sh aran…"   5 minutes ago
 
 ### Creating a databse and collections
 
-Next, we need to create a database and an `operations` collection.
+Next, we need to create a database and `operations`, `connection` collections.
 
 ```bash
 $ yarn run bootstrap database \
@@ -75,9 +75,15 @@ $ yarn run bootstrap database \
 --password root \
 --database epot \
 --collection operations
+
+$ yarn run bootstrap database \
+--username root \
+--password root \
+--database epot \
+--collection connections
 ```
 
-We'll also populate the collection we just created.
+We'll also populate the collections we just created.
 
 ```bash
 $ yarn run bootstrap operations ./operations.json \
@@ -85,6 +91,12 @@ $ yarn run bootstrap operations ./operations.json \
 --password root \
 --database epot \
 --collection operations
+
+$ yarn run bootstrap operations ./connections.json \
+--username root \
+--password root \
+--database epot \
+--collection connections
 ```
 
 That's it! Now just run `yarn run dev` to start the server.

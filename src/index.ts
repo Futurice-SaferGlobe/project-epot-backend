@@ -30,6 +30,7 @@ export async function runServer(port: number) {
       }
     })
   } catch (err) {
+    console.error(err)
     logger.error(err)
   }
 }

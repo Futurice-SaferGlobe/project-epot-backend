@@ -1,11 +1,7 @@
 // @ts-check
 const path = require('path')
-const { readFile } = require('fs')
-const { promisify } = require('util')
 const { aql } = require('arangojs')
-const { createDbConnection } = require('./utils')
-
-const readFileAsync = promisify(readFile)
+const { createDbConnection, readFileAsync } = require('./utils')
 
 async function setCollections({
   pathToJson,
@@ -20,32 +16,32 @@ async function setCollections({
     connection.useDatabase(database)
 
     // Read the JSON file as utf8 string and parse it
-    const operations = JSON.parse(
+    const json = JSON.parse(
       await readFileAsync(path.resolve(process.cwd(), pathToJson), 'utf8')
     )
 
     // INSERT operation(s) into the collection.
-    if (Array.isArray(operations)) {
-      for (let operation of operations) {
+    if (Array.isArray(json)) {
+      for (let operation of json) {
         await connection.query(
           aql`INSERT ${operation} INTO ${connection.collection(collection)}`
         )
       }
-    } else if (operations === Object(operations)) {
+    } else if (json === Object(json)) {
       await connection.query(
-        aql`INSERT ${operations} INTO ${connection.collection(collection)}`
+        aql`INSERT ${json} INTO ${connection.collection(collection)}`
       )
     } else {
       throw new Error(
-        'invalid data type (needs to be either an array or an object'
+        'invalid data type (needs to be either an array or an object)'
       )
     }
 
     // Success!!!
     console.log(
       `${
-        operations.length
-      } operation(s) added to the collection '${collection}'`
+        json.length
+      } operation(s)/connections(s) added to the collection '${collection}'`
     )
   } catch (err) {
     throw new Error(err)

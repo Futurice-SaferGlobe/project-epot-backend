@@ -8,7 +8,7 @@ const { name: modName, version: modVersion } = require('../../package.json')
 program.version(modVersion).usage('<command> [options]')
 
 // tasks
-const { initDatabase, setOperations } = require('../')
+const { initDatabase, setCollections } = require('../')
 
 program
   .command('database')
@@ -39,7 +39,26 @@ program
   )
   // tslint:disable:no-shadowed-variable
   .action(async (pathToJson, { username, password, database, collection }) => {
-    wrapCommand(setOperations)({
+    wrapCommand(setCollections)({
+      pathToJson,
+      username,
+      password,
+      database,
+      collection
+    })
+  })
+
+program
+  .command('connections [path]')
+  .option('-u, --username <user>', 'username for the db.')
+  .option('-p, --password <password>', 'password for the db.')
+  .option('-d, --database <database>', 'database name.')
+  .option(
+    '-c, --collection <collection>',
+    'the collection to set the connections to.'
+  )
+  .action(async (pathToJson, { username, password, database, collection }) => {
+    wrapCommand(setCollections)({
       pathToJson,
       username,
       password,

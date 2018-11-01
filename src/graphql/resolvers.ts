@@ -1,4 +1,5 @@
 import { queryOperation, queryOperations } from '@/models/operationModel'
+import { queryConnection, queryConnections } from '@/models/connectionModel'
 
 export const resolvers = {
   Query: {
@@ -20,6 +21,20 @@ export const resolvers = {
     operation: async (_, { id }) => {
       try {
         return await queryOperation(id)
+      } catch (err) {
+        throw err
+      }
+    },
+    operationConnection: async (_, { id }) => {
+      try {
+        return await queryConnection(id)
+      } catch (err) {
+        throw err
+      }
+    },
+    operationConnections: async (_, { ids }) => {
+      try {
+        return await queryConnections(ids)
       } catch (err) {
         throw err
       }

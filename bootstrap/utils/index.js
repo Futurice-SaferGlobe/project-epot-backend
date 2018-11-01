@@ -1,6 +1,7 @@
 // @ts-check
 const { Database } = require('arangojs')
 const generate = require('nanoid/generate')
+const readFileAsync = require('./readFileAsync')
 
 /**
  * creates and returns a connection to the database.
@@ -27,3 +28,5 @@ exports.generateArrayMemberUids = array =>
     uid: generate(uidAllowedSymbols, 10),
     ...member
   }))
+
+exports.readFileAsync = readFileAsync

@@ -1,3 +1,3 @@
 exports.initDatabase = require('./initDatabase')
-exports.setOperations = require('./setOperations')
+exports.setCollections = require('./setCollections')
 Object.assign(exports, require('./utils'))
