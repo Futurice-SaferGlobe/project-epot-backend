@@ -86,13 +86,13 @@ $ yarn run bootstrap database \
 We'll also populate the collections we just created.
 
 ```bash
-$ yarn run bootstrap operations ./operations.json \
+$ yarn run bootstrap operations ./__mock__/operations.json \
 --username root \
 --password root \
 --database epot \
 --collection operations
 
-$ yarn run bootstrap operations ./connections.json \
+$ yarn run bootstrap operations ./__mock__/connections.json \
 --username root \
 --password root \
 --database epot \
