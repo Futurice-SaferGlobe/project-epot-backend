@@ -96,6 +96,21 @@ program
     }
   })
 
+const { validateOperationSchema } = require('../validateSchema')
+const readFileAsync = require('../utils/readFileAsync')
+const path = require('path')
+program.command('validate').action(async () => {
+  readFileAsync(path.resolve(process.cwd(), '__mock__/operations.json'), {
+    encoding: 'utf8'
+  }).then(data => {
+    try {
+      validateOperationSchema(JSON.parse(data)[0])
+    } catch (err) {
+      console.error(err)
+    }
+  })
+})
+
 program.parse(process.argv)
 
 function wrapCommand(fn) {
