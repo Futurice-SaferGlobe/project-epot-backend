@@ -1,60 +1,49 @@
 // @ts-check
 const Joi = require('joi')
-
-const operationSchema = Joi.object({
-  operation: Joi.string(),
-  area: Joi.string(),
-  internalId: Joi.string(),
-  data: Joi.array().items(
-    Joi.object().keys({
-      index: Joi.number(),
-      uid: Joi.string(),
-      title: Joi.string(),
-      content: Joi.string().allow(''),
-      labels: Joi.array().items(Joi.number()),
-      subheaders: Joi.array().items(
-        Joi.object().keys({
-          index: Joi.number(),
-          uid: Joi.string(),
-          title: Joi.string(),
-          content: Joi.string().allow('')
-        })
-      )
-    })
-  )
-})
-
-const connectionSchema = Joi.object({
-  operationInternalId: Joi.string(),
-  connections: Joi.array().items(
-    Joi.object().keys({
-      from: Joi.string(),
-      to: Joi.string(),
-      type: Joi.string()
-    })
-  )
-})
+const schemas = require('./schema')
 
 const errorHandler = message => {
   throw new Error(message)
 }
 
-exports.validateOperationSchema = operationDocument => {
-  const opValidation = operationSchema.validate(operationDocument)
+/**
+ * @param {String} schema the name of the schema (eg. `operation`, `connection`)
+ * @param {*} document the document to validate
+ */
+const validateSchema = (schema, document) => {
+  const validSchemasArr = Object.keys(schemas)
 
-  if (opValidation.error) {
-    errorHandler(opValidation.error.details[0].message)
+  if (!validSchemasArr.includes(schema)) {
+    return errorHandler(
+      `invalid schema in argument. ` +
+        `schema '${schema}' does not equal one of valid schemas:` +
+        `${validSchemasArr.join(', ')}`
+    )
   }
 
-  return true
+  validators[schema](document)
 }
 
-exports.validateConnectionSchema = connectionDocument => {
-  const connValidation = operationSchema.validate(connectionDocument)
+const validators = {
+  operation: operationDocument => {
+    const opValidation = schemas.operation.validate(operationDocument)
 
-  if (connValidation.error) {
-    errorHandler(connValidation.error.details[0].message)
+    if (opValidation.error) {
+      errorHandler(opValidation.error.details[0].message)
+    }
+
+    return true
+  },
+
+  connection: connectionDocument => {
+    const connValidation = schemas.connection.validate(connectionDocument)
+
+    if (connValidation.error) {
+      errorHandler(connValidation.error.details[0].message)
+    }
+
+    return true
   }
-
-  return true
 }
+
+module.exports = validateSchema

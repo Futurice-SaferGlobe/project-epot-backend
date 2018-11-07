@@ -96,7 +96,7 @@ program
     }
   })
 
-const { validateOperationSchema } = require('../validateSchema')
+const validateSchema = require('../validateSchema')
 const readFileAsync = require('../utils/readFileAsync')
 const path = require('path')
 program.command('validate').action(async () => {
@@ -104,7 +104,7 @@ program.command('validate').action(async () => {
     encoding: 'utf8'
   }).then(data => {
     try {
-      validateOperationSchema(JSON.parse(data)[0])
+      validateSchema('keke', JSON.parse(data))
     } catch (err) {
       console.error(err)
     }
