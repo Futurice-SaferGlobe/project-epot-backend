@@ -2,6 +2,6 @@
 // exports.connection = require('./connection')
 
 module.exports = {
-  operation: require('./operation'),
-  connection: require('./connection')
+  operations: require('./operation'),
+  connections: require('./connection')
 }
