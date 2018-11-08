@@ -1,6 +1,12 @@
 import { queryOperation, queryOperations } from '@/models/operationModel'
 import { queryConnection, queryConnections } from '@/models/connectionModel'
 
+/**
+ * Because the indices in operations changed from number to string type, we need to convert it
+ * @param num number type to transform into a string
+ */
+const numToString = num => num.toString()
+
 export const resolvers = {
   Query: {
     info: () => `Ping`,
@@ -43,12 +49,18 @@ export const resolvers = {
 
   Operation: {
     name: root => root.operation,
-    headers: (root, { index }) =>
-      index ? root.data.filter(d => d.index === index) : root.data
+    headers: (root, { index }) => {
+      return index
+        ? root.data.filter(d => d.index === numToString(index))
+        : root.data
+    }
   },
 
   OperationHeader: {
-    subheaders: (root, { index }) =>
-      index ? root.subheaders.filter(s => s.index === index) : root.subheaders
+    subheaders: (root, { index }) => {
+      return index
+        ? root.subheaders.filter(s => s.index === numToString(index))
+        : root.subheaders
+    }
   }
 }
