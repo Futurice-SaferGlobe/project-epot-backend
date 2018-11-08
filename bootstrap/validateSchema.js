@@ -13,8 +13,6 @@ const errorHandler = message => {
 const validateSchema = (schema, document, callback) => {
   const validSchemasArr = Object.keys(schemas)
 
-  console.log(schema)
-
   if (!validSchemasArr.includes(schema)) {
     callback(
       new Error(
