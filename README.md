@@ -67,7 +67,19 @@ f451fd549c97        arangodb/arangodb   "/entrypoint.sh aran…"   5 minutes ago
 
 ### Creating a databse and collections
 
+#### Quickstart
+
 Next, we need to create a database and `operations`, `connection` collections.
+
+You can create database with collections and populate needed data with one command if you have made the environment file and configured it properly.
+
+```bash
+$ yarn run bootstrap quickstart
+```
+
+#### Manual database population
+
+For those that prefer doing everything manually.
 
 ```bash
 $ yarn run bootstrap database \
@@ -97,6 +109,14 @@ $ yarn run bootstrap operations ./__mock__/connections.json \
 --password root \
 --database epot \
 --collection connections
+```
+
+#### Validating documents
+
+If you wish to validate your files.
+
+```bash
+$ yarn run bootstrap validate
 ```
 
 That's it! Now just run `yarn run dev` to start the server.

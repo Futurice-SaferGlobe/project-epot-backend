@@ -4,11 +4,21 @@ const chalk = require('chalk').default
 const program = require('commander')
 // @ts-ignore
 const { name: modName, version: modVersion } = require('../../package.json')
+const path = require('path')
 
 program.version(modVersion).usage('<command> [options]')
 
 // tasks
 const { initDatabase, setCollections } = require('../')
+
+// ENV
+const isProd = process.env.NODE_ENV === 'production'
+require('dotenv-safe').config({
+  path: isProd ? path.resolve('../.env') : path.resolve('./.env'),
+  sample: isProd
+    ? path.resolve('../.env.example')
+    : path.resolve('./.env.example')
+})
 
 const actions = {
   bootstrapDatabase: async ({ username, password, database, collection }) => {
@@ -70,31 +80,56 @@ program
 
 program
   .command('quickstart')
-  .option('-u, --username <user>', 'username for the db.')
-  .option('-p, --password <password>', 'password for the db.')
-  .action(({ username, password }) => {
+  .action(() => {
     const defaults = {
-      databaseName: 'epot',
+      url: process.env.DB_URL,
+      databaseName: process.env.DB_NAME,
+      username: process.env.DB_USER,
+      password: process.env.DB_PASS,
       collections: ['operations', 'connections']
     }
 
     for (const collectionName of defaults.collections) {
       wrapCommand(initDatabase)({
-        username,
-        password,
+        url: defaults.url,
+        username: defaults.username,
+        password: defaults.password,
         databaseName: defaults.databaseName,
         collectionName
       })
 
       wrapCommand(setCollections)({
         pathToJson: `./__mock__/${collectionName}.json`,
-        username,
-        password,
+        url: defaults.url,
+        username: defaults.username,
+        password: defaults.password,
         database: defaults.databaseName,
         collection: collectionName
       })
     }
   })
+
+const validateSchema = require('../validateSchema')
+const readFileAsync = require('../utils/readFileAsync')
+program.command('validate').action(async () => {
+  const collections = ['operations', 'connections']
+  for (const collection of collections) {
+    readFileAsync(path.resolve(process.cwd(), `__mock__/${collection}.json`), {
+      encoding: 'utf8'
+    }).then(data => {
+      try {
+        validateSchema(collection, JSON.parse(data), async (err, document) => {
+          if (err) {
+            throw err
+          }
+          console.log(`Validation of ${collection}.json is OK`)
+        })
+      } catch (err) {
+        console.error(err)
+      }
+    })
+  }
+})
 
 program.parse(process.argv)
 

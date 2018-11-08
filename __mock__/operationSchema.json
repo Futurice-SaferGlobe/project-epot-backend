@@ -1,0 +1,18 @@
+{
+  "operation": "string",
+  "data": [
+    {
+      "index": "number",
+      "uid": "string",
+      "title": "string",
+      "subheaders": [
+        {
+          "index": "number",
+          "uid": "string",
+          "title": "string",
+          "content": "string"
+        }
+      ]
+    }
+  ]
+}
