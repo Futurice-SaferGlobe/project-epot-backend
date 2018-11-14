@@ -25,6 +25,7 @@ async function setCollections({
       if (err) {
         throw err
       }
+      
       // INSERT operation(s) into the collection.
       if (Array.isArray(json)) {
         for (let operation of json) {

@@ -8,6 +8,7 @@ import { initDb } from '@/database'
 
 import { resolvers, typeDefs } from './graphql'
 
+
 export async function runServer(port: number) {
   try {
     const server = new ApolloServer({

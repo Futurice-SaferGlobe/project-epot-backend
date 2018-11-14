@@ -1,6 +1,20 @@
 version: '2'
 
 services:
+  epot-backend:
+    container_name: epot-service
+    image: node:alpine
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/epot/backend
+    working_dir: /epot/backend
+    depends_on:
+      - arangodb
+    command: yarn run dev
+    env_file:
+      - .env
+
   arangodb:
     container_name: epot-arangodb
     image: arangodb/arangodb

@@ -9,9 +9,13 @@
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production run-p clean && webpack --config ./build/webpack.config.js",
-    "dev": "run-p start:* && yarn run build --watch",
+    "dev2": "run-p start:* && yarn run build --watch",
+    "dev": "yarn run build --watch",
+    "docker:dev": "yarn && docker-compose up -d",
+    "docker": "yarn && run-s start:*",
     "clean": "trash dist",
-    "start:db": "docker-compose up -d",
+    "start:docker": "docker-compose up -d",
+    "start:bootstrap": "./bootstrap/bin/bootstrap quickstart",
     "bootstrap": "./bootstrap/bin/bootstrap",
     "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('Please install dependencies using Yarn.')\""
   },
