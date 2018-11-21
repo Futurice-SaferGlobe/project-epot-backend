@@ -1,6 +1,6 @@
 [
   {
-    "operation": "FUTUTEST",
+    "operation": "TEST",
     "area": "Finland",
     "internalId": "fututest",
     "data": [
@@ -9,35 +9,35 @@
         "uid": "POLPRI_TOP_HEADER",
         "title": "Political primacy",
         "labels": [],
-        "content": "",
+        "content": "Political primacy is a key driver of peace operations at all stages of a conflict, including efforts to avert conflict. It entails that the design and deployment of a peace operation are guided by a strategy to deliver a political solution; the operation is part of a viable political process and is influential in comparison to other international actors.",
         "subheaders": [
           {
             "index": "1",
             "uid": "POLPRI_SUB_CONPRE",
             "title": "Conflict prevention",
             "labels": [],
-            "content": ""
+            "content": "Conflict prevention means preventing disputes from escalating into conflict and preventing the recurrence of conflict. Increasingly, peace operations adopt a wider perspective, aimed not only at reducing violence but also addressing its root causes, including political causes of conflict. Similarly, the UN approach to protection of civilians underlines the need to look beyond immediate physical protection and instead think preventively about protecting through dialogue and engagement and establishing a protective environment."
           },
           {
             "index": "2",
             "uid": "POLPRI_SUB_VIPOPR",
             "title": "Viable political process",
             "labels": [],
-            "content": ""
+            "content": "A viable political process is vital for UN peace operations. The viability of a political process derives from whether it has been conceived of and planned in support of a political solution and whether it enjoys wide support among political decision-making bodies and other actors with a vested interest in ending a conflict. The legitimacy and credibility of the peace operation is affected by the degree to which its activities are supportive of and integrated into an overarching political process. Similarly, the overarching political process guides and supports coordination among partners. In sum, the political process provides (or should provide) the framework that ensures coherence among the activities of various stakeholders and will affect issues such as prioritisation, sequencing, and division of labour. National ownership also impacts the viability and sustainability of a political process."
           },
           {
             "index": "3",
             "uid": "POLPRI_SUB_NATREC",
             "title": "National reconciliation",
             "labels": [],
-            "content": ""
+            "content": "National reconciliation creates a foundation for the lasting settlement of conflicts and is often a key element of the political process. While peace operations can provide the space (political or security) for a reconciliation process to take place, the process is unlikely to succeed unless national counterparts carry it forward and it is structured to address concerns, fears, and grievances of the population."
           },
           {
             "index": "4",
             "uid": "POLPRI_SUB_REGINV",
             "title": "Political direction & support",
             "labels": [],
-            "content": ""
+            "content": "Political direction and support are determined by the extent to which political decision makers and member states of the respective international organisations are engaged in the establishment and functioning of a peace operation. UN peace operations benefit greatly if the Security Council is actively engaged and demonstrates sustained commitment and support. Conversely, an operation may suffer if Security Council members fundamentally disagree on its establishment, its continuation or the scope and direction of its mandate, or can only reach agreement on a vague and overloaded mandate. Beyond initial consent to the deployment of a peace operation, the extent of national ownership and quality of cooperation with national authorities during mandate implementation impacts the effectiveness of peace operations."
           }
         ]
       },
@@ -46,49 +46,49 @@
         "uid": "PEOCEN_TOP_HEADER",
         "title": "People-centred",
         "labels": [],
-        "content": "",
+        "content": "Peace operations should implement a people-centred approach in support of the political process, which requires that they be responsive to the legitimate needs and desires of affected communities. Creating more responsive peace operations requires a shift in the focus of both UN headquarters and its member states. The people-centred approach suggests that community needs guide the political strategy and approaches of peace operations, and that local populations (including potentially marginalised groups) be engaged in mission analysis, planning, coordination, and performance assessment. It also looks at what safeguards are put in place to ensure peace operations do no harm and calls for a reorientation towards protecting and serving those that an operation has been mandated to assist.",
         "subheaders": [
           {
             "index": "1",
             "uid": "PEOCEN_SUB_COMENG",
             "title": "Community engagement",
             "labels": [],
-            "content": ""
+            "content": "Community engagement broadens a state-centric approach to include other groups. In a people-centred approach, this means that peace operations never lose sight of the needs, fears, and grievances of communities beyond the state. A focus on community engagement and local-level conflict management can include a variety of intervention formats, ranging from conflict mitigation through mediation or dialogue, to financial, logistic or capacity-building support to community initiatives or to advocacy and awareness raising to address perceptions or narratives."
           },
           {
             "index": "2",
             "uid": "PEOCEN_SUB_UNICON",
             "title": "Unintended consequences",
             "labels": [],
-            "content": ""
+            "content": "Peace operations have both intended and unintended consequences for communities and their environment, which may be positive or negative. While positive unintended consequences may be maximised, efforts are needed for operations to recognise any negative unintended consequences and to minimise them. These approaches are often called “do no harm” or “conflict sensitivity”. Typical unintended consequences include the environmental footprint of a peace operation and uneven distribution of benefits among communities, especially where there are prior ethnic or religious divides."
           },
           {
             "index": "3",
             "uid": "PEOCEN_SUB_CONANA",
             "title": "Conflict analysis",
             "labels": [],
-            "content": ""
+            "content": "Conflict analysis promotes a comprehensive, detailed and common understanding of a conflict, including its visible effects and its root causes, and can be used as a basis for effectively planning and implementing a peace operation at all levels of decision-making. A thorough conflict analysis adds particular value when it produces disaggregated data with a focus on gender as well as on related areas such as protection of civilians, human rights, displaced populations, strategic communications, and managing expectations, to name but a few. The greater the depth of understanding of the conflict, the more likely it is that the policies and strategies created are relevant. Conflict analysis can also be used as a baseline for assessing the impact of an intervention at a later stage."
           },
           {
             "index": "4",
             "uid": "PEOCEN_SUB_PEADIV",
             "title": "Peace dividends",
             "labels": [],
-            "content": ""
+            "content": "Peace dividends are the benefits accrued by the population from a peace process or peace operation. More immediate peace dividends can contribute to confidence in the political process as well as delivering tangible improvements for the population."
           },
           {
             "index": "5",
             "uid": "PEOCEN_SUB_MEDDIA",
             "title": "Mediation & dialogue",
             "labels": [],
-            "content": ""
+            "content": "Mediation and dialogue can be instrumental in bringing about change at the local level, including building confidence or defusing tensions, as well as contributing to addressing local grievances. The participation of women – for instance, through women’s rights groups or other civil society representation – is especially important in mediation and dialogue processes to ensure that concerns voiced and solutions proposed are reflective of the particular impact these have on women and girls."
           },
           {
             "index": "6",
             "uid": "PEOCEN_SUB_STRCOM",
             "title": "Communication & outreach",
             "labels": [],
-            "content": ""
+            "content": "Peace operations employ strategic communication to convey their role, their objectives and their activities in a particular country/area of deployment, thereby aiming to enhance their legitimacy and credibility. Explaining the overarching political process and fostering support for this process is frequently a key task for strategic communication. Communication entails using various methods of outreach to access different interest groups, communities and stakeholders and delivering a consistent and coordinated message. The challenge is to remain consistent and coordinated while tailoring the message to different audiences."
           }
         ]
       },
@@ -97,42 +97,42 @@
         "uid": "WOPESE_TOP_HEADER",
         "title": "Women, peace & security",
         "labels": [],
-        "content": "",
+        "content": "The women, peace and security (WPS) agenda has two main dimensions. It addresses internal aspects of how the operation integrates WPS goals into its plans and performance system as well as how the leadership implements a gendered approach in its interaction with local and national stakeholders. For a peace operation, promoting the WPS agenda also entails prioritising the prevention of and response to sexual exploitation and abuse (SEA) and incorporating conflict-related sexual violence into its protection strategy. The WPS agenda also deals with external aspects, such as how conflict impacts men, women, girls and boys differently and how access to elements of a peace process varies. Emphasis placed on women’s agency (rather than viewing women as only victims of a conflict) encourages inclusion on multiple levels of activity.",
         "subheaders": [
           {
             "index": "1",
             "uid": "WOPESE_SUB_GENMAI",
             "title": "Gender mainstreaming",
             "labels": [],
-            "content": ""
+            "content": "Gender considerations are (or should be) mainstreamed into all measures to ensure security and promote stability, including mission plans and the performance system. Gender mainstreaming requires certain structures and competencies in operations. Of special interest in gender mainstreaming are the male-to-female ratio of staff, the placement of women in an operation, the existence of dedicated functions such as gender units, advisers or focal points to drive forward the WPS strategy and specific in-mission gender training, as well as qualitative or quantitative evidence of gender mainstreaming in an operation’s organisational culture."
           },
           {
             "index": "2",
             "uid": "WOPESE_SUB_IMCOWO",
             "title": "Impact of conflict on women",
             "labels": [],
-            "content": ""
+            "content": "Conflict impacts different groups differently. Developing a differentiated understanding of how conflict impacts women, girls, men and boys and their respective roles in society is necessary for implementing the WPS agenda. Conflicts often exacerbate pre-existing inequalities by, for example, restricting women’s ownership of land, reducing access to education, and increasing child marriage or maternal mortality, resulting in long-lasting consequences. In practice, minimising the negative impact of conflict on women requires consideration of the gender perspective throughout a peace operation’s efforts at conflict prevention and management."
           },
           {
             "index": "3",
             "uid": "WOPESE_SUB_PARWOM",
             "title": "Participation of women",
             "labels": [],
-            "content": ""
+            "content": "The participation of women is one of the key tenets of SC Resolution 1325 and the WPS agenda. Participation of women in peacekeeping operations can range from mediation efforts to the design and implementation of DDR campaigns. Participation can take place at different levels, from grassroots to senior government, in different areas, from social, political to economic and others, and can be formal or informal. Ensuring participation of women requires a detailed understanding of the conflict, as women may be less visible in public spaces at first sight."
           },
           {
             "index": "4",
             "uid": "WOPESE_SUB_SEEXAB",
             "title": "Preventing sexual exploitation & abuse",
             "labels": [],
-            "content": ""
+            "content": "Preventing sexual exploitation and abuse (SEA) is important for the women, peace and security agenda as SEA tends to disproportionately affect women and children, although it also affects men. How an operation prioritises the prevention of SEA and responds to incidents also has a direct impact on its legitimacy, credibility and effectiveness. Key questions relate to whether the operation has a code of conduct, how it implements the zero-tolerance policy and how it handles possible cases of harassment by UN personnel."
           },
           {
             "index": "5",
             "uid": "WOPESE_SUB_SEGECO",
             "title": "Conflict-related sexual violence",
             "labels": [],
-            "content": ""
+            "content": "The protection of women from sexual and gender-based/conflict-related sexual violence (SGBV/CRSV) during and after armed conflict is an essential part of the 1325 WPS agenda. Men and boys may also be exposed to SGBV/CRSV, albeit in different forms. Preventing and addressing SGBV/CRSV is an integrated and prioritised element in a peace operation’s protection strategy."
           }
         ]
       },
@@ -140,7 +140,7 @@
         "index": "4",
         "uid": "LEGCRE_TOP_HEADER",
         "title": "Legitimacy & credibility",
-        "content": "",
+        "content": "Legitimacy and credibility of the peace operation in the host country affect its ability to function and thus are central to its effectiveness. The way an operation is regarded by the host country and other actors is not fixed; it can vary over time and among different groups of stakeholders. The extent to which the actual measures, capabilities and practices of the peace operation are attuned to the situation on the ground is important. If the population considers the activities of the operation to be irrelevant – i.e., they do not address the central issues of a conflict – this could be detrimental to the peace operation’s legitimacy.",
         "labels": [],
         "subheaders": [
           {
@@ -148,42 +148,42 @@
             "uid": "LEGCRE_SUB_PUBPER",
             "title": "Public perception",
             "labels": [],
-            "content": ""
+            "content": "While not an objective measure of its effectiveness, public perception of a peace operation has increasingly been recognised as an essential factor for its legitimacy and credibility. Public perception surveys are considered an important gauge for whether a peace operation is making progress on key mandated tasks, such as protection of civilians or strengthening the rule of law, or how the efforts of peace operations impact different communities and interest groups. Public perception can vary significantly between different stakeholders."
           },
           {
             "index": "2",
             "uid": "LEGCRE_SUB_IMPART",
             "title": "Impartiality",
             "labels": [],
-            "content": ""
+            "content": "Impartiality is a core principle of UN peacekeeping. As peace operations intervene in increasingly complex conflict situations, maintaining impartiality has become more and more challenging, especially in regions where the government is contested, fragile, dysfunctional or biased. A peace operation may, for example, be tasked with the extension of state authority or with supporting government forces fighting rebel groups. Impartiality can also be a question of congruence – i.e., the extent to which the actual measures, capabilities and practices of a peace operation are in accordance with the framework and objectives stipulated in strategic documents, such as the SC resolution mandating the operation. Not delivering on mandated tasks or conversely overstepping mandated authority, will – most likely – negatively impact a peace operation’s legitimacy and credibility."
           },
           {
             "index": "3",
             "uid": "LEGCRE_SUB_RAPDEP",
             "title": "Rapid deployment",
             "labels": [],
-            "content": ""
+            "content": "The legitimacy and credibility of a peace operation is impacted by its ability to respond quickly to an evolving crisis situation. If the time between the adoption of an SC resolution and the deployment of troops, police and civilian personnel is too long, the peace operation’s credibility is undermined and the early window of opportunity where an operation can wield the most influence is missed. In those cases, the initial high expectations of the host population can turn against a peace operation and severely undermine its effectiveness. The UN is also aiming to strengthen its ability to be more flexible and agile in responding to changes on the ground, especially where an operation is called upon to protect civilians in a volatile environment or rapidly changing circumstances."
           },
           {
             "index": "4",
             "uid": "LEGCRE_SUB_CAPABI",
             "title": "Capabilities",
             "labels": [],
-            "content": ""
+            "content": "Capabilities refer to the personnel, material, resources and skills a peace operation requires to carry out and maintain its mandated task. A peace operation’s access to the right capabilities in the right quantity at the right time is important to its relevance, legitimacy, credibility, effectiveness and impact. Access to the right capabilities is especially important when it comes to the ability of an operation to increase its presence in remote areas or when protecting civilians."
           },
           {
             "index": "5",
             "uid": "LEGCRE_SUB_MANEXP",
             "title": "Managing expectations",
             "labels": [],
-            "content": ""
+            "content": "Managing expectations is a critical factor for legitimacy and credibility where the gap between the population’s hopes and a peace operation’s ability and willingness to deliver on those hopes widens. Peace operations need to find a balance between explaining their role in a country – thereby fostering legitimacy – but not over-promising on what they can deliver and thereby running the risk of undermining their credibility. Paradoxically, engaging extensively with communities is intended to increase the relevance of a peace operation’s activities but can also excessively raise expectations (see also “Communication & outreach”)."
           },
           {
             "index": "6",
             "uid": "LEGCRE_SUB_CIVSOC",
             "title": "Civil society",
             "labels": [],
-            "content": ""
+            "content": "Civil society engagement provides a peace operation with a broader perspective of society and can mobilise champions of the peace process or reform constituencies within the community. The inclusiveness of a peace operation’s activities – i.e., how and to what extent it involves different societal groups and communities in its processes or operates outside the capital – affects its legitimacy and credibility, as well as the sustainability of the peace process. Civil society organisations are often important partners in the peace process. Many have operated throughout a conflict and had a central role in helping the local population."
           }
         ]
       },
@@ -191,7 +191,7 @@
         "index": "5",
         "uid": "COHPAR_TOP_HEADER",
         "title": "Coherence & partnerships",
-        "content": "",
+        "content": "A peace operation benefits from a coherent vision that underpins the international effort in support of the political process. In practice, coherence often involves partnership frameworks and mechanisms between different operations in the same country or region. Inclusiveness is an essential aspect of coherence and partnerships and entails having all the stakeholders – national, sub-national and international – around the table.  An assessment is necessary to ensure sufficient inclusiveness without making processes unmanageable and to identify the most important stakeholders to include.",
         "labels": [],
         "subheaders": [
           {
@@ -199,21 +199,21 @@
             "uid": "COHPAR_SUB_FRACOO",
             "title": "Frameworks for coordination",
             "labels": [],
-            "content": ""
+            "content": "Particular frameworks are necessary for coordination to take place. There are many examples of coordination mechanisms, such as joint trust funds, nationally led coordination boards or international coordination meetings. Often, these coordination mechanisms address a particular issue, such as support or security sector reform, aiding delivery or protection of civilians. Coordination frameworks exist on different levels, ranging from national NGO consortia to government-level donor meetings. Past experience indicates that a strong national role is essential to increase the chances of activities, funding and material support."
           },
           {
             "index": "2",
             "uid": "COHPAR_SUB_INAPCO",
             "title": "Integrated approach / system coherence",
             "labels": [],
-            "content": ""
+            "content": "System coherence in peace operations has been pursued under various headings, such as integrated or comprehensive approaches or “One UN”. A peace operation is usually just one of many representatives of an international organisation in any given conflict area, thus necessitating close cooperation with other representatives. The long-standing goal of system coherence is a more effective, efficient, coherent, coordinated and better performing United Nations country presence with reduced transaction costs for host countries. Indicators for system coherence include double-hatting of the resident coordinator as the DSRSG, the coordination of agency, funds and programme activities with the peace operation, or the existence of management, programming and monitoring frameworks. More recently, integration has focused on transitions and system coherence throughout different phases of international deployment, including before and after a peace operation."
           },
           {
             "index": "3",
             "uid": "COHPAR_SUB_OTINPR",
             "title": "Other international presence",
             "labels": [],
-            "content": ""
+            "content": "Many conflict areas have a number of international organisations or coalitions present. The challenge for peace operations is to ensure effective division of labour and to minimise duplication of efforts or, worse, contradictory approaches. In reality, each organisation or coalition is pursuing specific agendas that may or may not coincide with that of a UN peace operation and may impact the degree of influence that a peace operation has on the political process."
           }
         ]
       },
@@ -221,7 +221,7 @@
         "index": "6",
         "uid": "INTSUP_TOP_HEADER",
         "title": "International support",
-        "content": "",
+        "content": "International support has been identified as an important factor for the effectiveness of a peace operation, including how unified and supportive the Security Council is or the impact of external spoilers. It is closely tied to the question of political direction and support and the extent to which there is sustained engagement of member states in a peace process.",
         "labels": [],
         "subheaders": [
           {
@@ -229,28 +229,28 @@
             "uid": "INTSUP_SUB_BILINT",
             "title": "Bilateral interests",
             "labels": [],
-            "content": ""
+            "content": "Bilateral interests exist in addition to broader international cooperation often deriving from historical ties or joint interests. These ties may, and often do, support the broader peace operation but they may also hamper it. The influence bilateral partners wield may reinforce the peace operation if it can be harnessed in support of the political process. It may, however, be challenging to align bilateral activities as much as possible with the overarching political strategy and to integrate them into frameworks for coordination, especially if bilateral interests are at cross-purposes with a peace operation."
           },
           {
             "index": "2",
             "uid": "INTSUP_SUB_BURSHA",
             "title": "Burden sharing",
             "labels": [],
-            "content": ""
+            "content": "Burden sharing is usually used in connection with the distribution of risk and expenditure among countries contributing troops and police to peace operations, as well as with the division of labour and sharing of costs among different international organisations. Burden sharing is closely related to coherence and is an essential element of partnerships in peace operations. The strength of agreement on burden sharing is closely tied to the extent of political support for an operation."
           },
           {
             "index": "3",
             "uid": "INTSUP_SUB_REQINV",
             "title": "Regional involvement",
             "labels": [],
-            "content": ""
+            "content": "Regional organisations and countries in a region may have a particular interest in an area and the sustainable resolution of a conflict, as well as playing a central role in creating stability. They frequently engage host governments in formal intergovernmental (negotiation) processes. For a peace operation, coherence with efforts of regional actors, ranging from operations deployed by a regional organisation or peace negotiations led by a regional alliance, is pivotal. Beyond a formal alliance or operation deployed by a regional organisation, neighbouring states or other states in the region tend to share security concerns and are directly impacted by a conflict. Their involvement can range from positive and supportive to negative and obstructive but will in any case affect the political process. An important factor for a peace operation is how its political engagement can be aligned to that of regional actors."
           },
           {
             "index": "4",
             "uid": "INTSUP_SUB_EXTSPO",
             "title": "External spoilers",
             "labels": [],
-            "content": ""
+            "content": "External spoilers may hamper or complicate processes towards peace. Some spoilers and their policies may inadvertently disrupt or indirectly influence the peace process negatively. Other spoilers may have directly benefitted from conflict or may disagree with the policies being pursued, solutions proposed and approaches implemented as part of a peace process."
           }
         ]
       },
@@ -258,7 +258,7 @@
         "index": "7",
         "uid": "NAINOW_TOP_HEADER",
         "title": "National & international ownership",
-        "content": "",
+        "content": "National and international ownership denotes the extent of political will of conflict parties to end the conflict and implement a political settlement. Ownership also extends to the support of national and local actors as well as their representation in the political processes. Other factors to consider are the extent to which the peace operation has the support (not just consent) of the government and conflict parties and how, if mandated, the peace operation contributes to the extension of state authority.",
         "labels": [],
         "subheaders": [
           {
@@ -266,49 +266,49 @@
             "uid": "NAINOW_SUB_NOSTAC",
             "title": "Non-state (armed) actors",
             "labels": [],
-            "content": ""
+            "content": "Non-state actors can encompass a broad range of actors from armed rebel groups or former combatants, traditional justice mechanisms or institutions, civil society organisations or local governance arrangements. Non-state actors gain power and influence when state structures and service delivery is weak – be it in the area of public safety, justice or public administration. Fragmentation of society during conflict reinforces the transfer of power. In some contexts, partisan non-state actors may have more credibility and authority in some areas or issues than state actors. Although outside the formal state architecture, non-state actors may wield considerable de facto power among their constituencies, and their inclusion ensures broader national ownership."
           },
           {
             "index": "2",
             "uid": "NAINOW_SUB_INSBUI",
             "title": "Institution building",
             "labels": [],
-            "content": ""
+            "content": "Weak institutions and poor service delivery are both causes and consequences of conflict. Conflict aggravates the fragility of institutions, which are no longer able to function properly or take care of the day-to-day governing of the country. Institutions may also be bloated, lack capacity or be poorly managed or structured. Peace operations have increasingly taken on institution building in the areas of rule of law, in the security sector or as part of the extension of state authority. The aim is to empower host-state authorities to be effective national owners and drivers of a peace process. Institution building also forms part of an operation’s protection strategy, as institutions capable of protecting their own citizens are part of establishing a protective environment. Sustainable institution building requires resources (both financial and human) but also time."
           },
           {
             "index": "3",
             "uid": "NAINOW_SUB_SESERE",
             "title": "Security-sector reform",
             "labels": [],
-            "content": ""
+            "content": "A security sector that is effective and is based on the rule of law is a precondition for sustainable peace in post-conflict societies. The security sector not only comprises uniformed personnel, but multiple structures and institutions that are responsible for their recruitment, management and oversight. Since past experience has demonstrated that security-sector reform (SSR) needs to be comprehensive to succeed, efforts in this area are directed at a broad spectrum of actors: military, police, intelligence services, justice, corrections, ministries, parliamentary oversight committees, civil society, and also, at times, informal or non-state security providers. Given this complexity, peace operations set their own context-specific priorities for SSR."
           },
           {
             "index": "4",
             "uid": "NAINOW_SUB_ABSCAP",
             "title": "Absorption capacity",
             "labels": [],
-            "content": ""
+            "content": "Absorption capacity is the extent to which the local context can take on-board the assistance provided, in terms of expertise, capacity building and material support. The pace at which a peace operation expects an institution to develop or a process to unfold may be at odds with their ability to absorb the assistance provided and bring about the expected change. Associated challenges are exacerbated when the international actors – from peace operations to bilateral actors and others – present in the conflict area provide contradictory or uncoordinated advice or assistance."
           },
           {
             "index": "5",
             "uid": "NAINOW_SUB_ELICAP",
             "title": "Elite capture",
             "labels": [],
-            "content": ""
+            "content": "Elite capture denotes the tendency to choose as counterparts those persons or groups that are prominent figures, speak the mission language (usually English or French), communicate in terms and ways that are familiar in the international context and are perhaps more highly educated, rather than assessing how well they represent the local population. Often, a group of prominent actors who “shout the loudest” is easily identifiable, but there may be less visible but equally important stakeholders. Inclusion of different political, ethnic, geographical, social, age, gender and religious groupings, as well as state and non-state actors, women, youth and the disabled, leads to a broader understanding of the needs of the society and to more considered, coherent and applicable political priorities. The concern is that these counterparts are unlikely to speak for the entire host population or even represent a significant share of the population. The extent to which a peace operation is able to reach beyond the most obvious elite will affect its effectiveness."
           },
           {
             "index": "6",
             "uid": "NAINOW_SUB_FRASOC",
             "title": "Fragmented societies",
             "labels": [],
-            "content": ""
+            "content": "Fragmentation of societies into various small groupings is likely to hamper national ownership, as there may be opposing visions for the way forward and varying capacities to engage. A peace operation will have to navigate this fragmentation and take different visions into account. The importance of understanding the multitude of interests, needs, and concerns in a conflict area is a prerequisite for overcoming or ameliorating fragmentation in post-conflict societies. In turn, reducing fragmentation is a precondition for arriving at a coherent and common political strategy to guide a peace process."
           },
           {
             "index": "7",
             "uid": "NAINOW_SUB_CONBUI",
             "title": "Confidence building",
             "labels": [],
-            "content": ""
+            "content": "Most activities of peace operations serve the underlying purpose of building confidence – i.e., to contribute to an environment that is conducive to fostering and increasing mutual confidence between the conflict parties or even within parties. Following a conflict, mistrust among communities and conflict parties may need to be dismantled before confidence can be developed. Confidence building is a key mechanism for repairing societal bonds after conflict and can be pursued through dialogue processes, capacity building or advocacy. The greater the level of confidence in the peace operation, the more beneficial it is to national cooperation and ownership."
           }
         ]
       },
@@ -316,7 +316,7 @@
         "index": "8",
         "uid": "PROSTA_TOP_HEADER",
         "title": "Protection & stabilisation",
-        "content": "",
+        "content": "Protection and stabilisation are central remits of any peace operation, and include how the presence and actions of a peace operation contribute to preventing an outbreak or escalation of violent conflict, to furthering national, local and community stability and protecting civilians. This dimension also includes how the peace operation promotes human rights and provides confidence-building measures.",
         "labels": [],
         "subheaders": [
           {
@@ -324,63 +324,63 @@
             "uid": "PROSTA_SUB_PROCIV",
             "title": "Protection of civilians",
             "labels": [],
-            "content": ""
+            "content": "Peace operations have refocused on the protection of civilians (PoC) since 1999. PoC is a whole-of-mission endeavour where all components – military, police, and civilian – contribute to the implementation of the PoC mandate. PoC goes beyond protecting civilians from immediate physical harm through deterrence, intervention or offensive operations and includes protection through dialogue and engagement – e.g., supporting of political processes or conflict management and reconciliation, as well as creating protective environments by maintaining law and order or strengthening host-state security services that respect human rights and the rule of law. "
           },
           {
             "index": "2",
             "uid": "PROSTA_SUB_HURIVI",
             "title": "Human rights violations / impunity",
             "labels": [],
-            "content": ""
+            "content": "Conflicts are often accompanied by serious human rights violations and impunity for the perpetrators. Peace operations engage in a host of activities, ranging from protecting and promoting human rights through long-term measures, such as strengthening human rights laws and associated legal practices, to ensuring that perpetrators are dealt with appropriately and associated grievances are addressed. As part of their shorter-term protection and stabilisation remit, tasks include monitoring human rights, empowering populations to demand respect for their rights, and enabling government institutions to fulfil their human rights commitments."
           },
           {
             "index": "3",
             "uid": "PROSTA_SUB_TRAJUS",
             "title": "Transitional justice",
             "labels": [],
-            "content": ""
+            "content": "Transitional justice comprises both judicial and non-judicial mechanisms used to address grievances, human rights violations, abuses, and mass atrocities committed during a conflict, thus ending impunity and dealing with associated trauma. Transitional justice mechanisms are used when established judicial mechanisms are lacking in either capacity, knowledge or ability, and they are essential for establishing both trust and conditions for a democratic society. Typical mechanisms of transitional justice include establishment of truth commissions, criminal prosecutions of the worst perpetrators in, e.g., the International Court of Justice, institutional development, mediation, support for dialogue or programmes of reparations. With regard to conflict, transitional justice processes seek to address causes, effects and excesses.\nTransitional justice processes typically enhance stabilisation, and especially national ownership of peace processes, as well as encouraging dealing with grievances of individuals (people-centred approach)."
           },
           {
             "index": "4",
             "uid": "PROSTA_SUB_RULLAW",
             "title": "Rule of law",
             "labels": [],
-            "content": ""
+            "content": "Implementation of the rule of law is essential to the sustainable stabilisation of post-conflict societies. Promoting the rule of law includes addressing local institutions in the areas of justice, police, and corrections. For the population, access to justice is the fundamental concern and is often linked to the extension of state authority. A number of rule of law issues fuel conflict, such as disputed property and land rights or crime related to natural resources."
           },
           {
             "index": "5",
             "uid": "PROSTA_SUB_DISPOP",
             "title": "Displaced populations",
             "labels": [],
-            "content": ""
+            "content": "Large populations of refugees or internally displaced persons (IDPs) are a key feature of modern conflict. They impact a peace operation’s ability to deliver on protection and stabilisation in two ways: protecting displaced populations creates additional challenges for providing security and delivering aid; stabilising an area and providing a safe environment is a precondition for encouraging the voluntary return of displaced populations."
           },
           {
             "index": "6",
             "uid": "PROSTA_SUB_EXSTAU",
             "title": "Extension of state authority",
             "labels": [],
-            "content": ""
+            "content": "Peace operations’ efforts to build the capacity of host-state institutions, including the security services, is linked to the goal of extending or restoring state authority in more remote areas where the state has not been present or has been unable to deliver basic public goods. In the context of protection and stabilisation, the extension of state authority is related to public safety and access to justice."
           },
           {
             "index": "7",
             "uid": "PROSTA_SUB_PUBSEF",
             "title": "Public safety & secure environment",
             "labels": [],
-            "content": ""
+            "content": "Public safety goes beyond mere protection from crime, as it also refers to the welfare of the general public, including a range of issues such as traffic safety, harassment or natural disasters. Ensuring a secure environment is particularly relevant in areas where there may be residual conflict-related violence. Safeguarding public safety and a secure environment has been a core mandated task from the early days of peacekeeping and is based on the rationale that people will be more willing to engage in a peace process if there is some guarantee of their security. For people living in (post)conflict areas, feeling safe is linked to the provision of public safety either through national security providers or the presence of an international peace operation."
           },
           {
             "index": "8",
             "uid": "PROSTA_SUB_COMPOL",
             "title": "Community policing",
             "labels": [],
-            "content": ""
+            "content": "Supporting policing and strengthening the relationship between host-state police and the communities they serve is central to fostering a protective environment. The support may be longer-term capacity and institution building, but may also include more immediate community engagement. Community policing seeks involvement of communities in discussions on priorities and making policing more responsive to the needs of the community by, for example, establishing police–public bodies, such as public safety councils, to promote community safety. Policing approaches and operational priorities that are developed with the community are likely to serve the public safety needs of the local population better and, in turn, foster communities’ trust in police services."
           },
           {
             "index": "9",
             "uid": "PROSTA_SUB_DIDERE",
             "title": "Disarmament, demobilisation, & reintegration (DDR)",
             "labels": [],
-            "content": ""
+            "content": "Conflict areas are marked by a complex constellation of state and non-state actors, security forces and armed groups. The number of combatants and weapons is large. DDR efforts seek a rapid improvement of the security situation after conflict through disarmament and demobilisation of combatants. DDR in peace operations is also linked to sustainable economic development, reconstruction, and reconciliation of different groups, and focuses more on local communities (community-based DDR). In post-conflict societies, lines are often blurred between ex-combatants, gang members and criminals, requiring special approaches, such as community-violence reduction programmes. All elements of DDR – disarmament, demobilisation, and reintegration (sometimes also including repatriation and resettlement) – require a level of trust between conflict parties so that they are willing to give up their own security safeguards."
           }
         ]
       }
