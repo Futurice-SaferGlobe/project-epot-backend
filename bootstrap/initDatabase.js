@@ -1,5 +1,7 @@
 // @ts-check
 const { createDbConnection } = require('./utils')
+const { aql } = require('arangojs')
+const chalk = require('chalk').default
 
 /**
  *
@@ -20,7 +22,7 @@ async function initDatabase(opts) {
       username: opts.username,
       password: opts.password
     })
-    console.log(`connected to ${opts.url}`)
+    console.log(chalk.green(`connected to ${opts.url}`))
 
     // Create database
     const isDatabaseExist = await connection
@@ -29,24 +31,33 @@ async function initDatabase(opts) {
 
     if (!isDatabaseExist) {
       await connection.createDatabase(opts.databaseName)
-      console.log(`database '${opts.databaseName}' created`)
+      console.log(chalk.green(`database '${opts.databaseName}' created`))
     } else {
-      console.log(`database '${opts.databaseName}' already exists. skipping...`)
+      console.log(
+        chalk.green(
+          `database '${opts.databaseName}' already exists. skipping...`
+        )
+      )
     }
     connection.useDatabase(opts.databaseName)
 
     // Create collection
     const collection = connection.collection(opts.collectionName)
-    await collection
-      .create()
-      .catch(err =>
-        console.error(`error while creating collection:`, err.message)
-      )
+    await collection.create().catch(err => {
+      // Collection already exists
+      if (err.code === 409) {
+        connection.query(aql`
+          FOR d IN ${collection}
+            REMOVE d IN ${collection}
+        `)
 
-    console.log(
-      `collection '${opts.collectionName}' created ` +
-        `or left intact (if duplicate name was provided).`
-    )
+        return
+      }
+
+      throw err
+    })
+
+    console.log(chalk.green(`collection '${opts.collectionName}' created `))
 
     return { connection, collection }
   } catch (err) {

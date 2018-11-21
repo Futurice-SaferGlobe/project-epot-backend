@@ -3,6 +3,7 @@ const path = require('path')
 const { aql } = require('arangojs')
 const { createDbConnection, readFileAsync } = require('./utils')
 const validateSchema = require('./validateSchema')
+const chalk = require('chalk').default
 
 async function setCollections({
   pathToJson,
@@ -44,9 +45,10 @@ async function setCollections({
 
       // Success!!!
       console.log(
-        `${
-          json.length
-        } operation(s)/connections(s) added to the collection '${collection}'`
+        chalk.green(
+          `${json.length}` +
+            `operation(s)/connections(s) added to the collection '${collection}'`
+        )
       )
     })
   } catch (err) {

@@ -78,19 +78,18 @@ program
   )
   .action(actions.createCollection)
 
-program
-  .command('quickstart')
-  .action(() => {
-    const defaults = {
-      url: process.env.DB_URL,
-      databaseName: process.env.DB_NAME,
-      username: process.env.DB_USER,
-      password: process.env.DB_PASS,
-      collections: ['operations', 'connections']
-    }
+program.command('quickstart').action(async () => {
+  const defaults = {
+    url: process.env.DB_URL,
+    databaseName: process.env.DB_NAME,
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    collections: ['operations', 'connections']
+  }
 
-    for (const collectionName of defaults.collections) {
-      wrapCommand(initDatabase)({
+  for (const collectionName of defaults.collections) {
+    try {
+      await initDatabase({
         url: defaults.url,
         username: defaults.username,
         password: defaults.password,
@@ -98,16 +97,19 @@ program
         collectionName
       })
 
-      wrapCommand(setCollections)({
+      await setCollections({
         pathToJson: `./__mock__/${collectionName}.json`,
-        url: defaults.url,
+        // url: defaults.url,
         username: defaults.username,
         password: defaults.password,
         database: defaults.databaseName,
         collection: collectionName
       })
+    } catch (err) {
+      throw err
     }
-  })
+  }
+})
 
 const validateSchema = require('../validateSchema')
 const readFileAsync = require('../utils/readFileAsync')
