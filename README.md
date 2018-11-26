@@ -47,6 +47,12 @@ DB_PASS=root
 
 You'll obviously need to use different credentials in a production enviroment.
 
+### Install dependencies
+
+```bash
+$ yarn
+```
+
 ### Starting ArangoDB
 
 Before the server app works, you need to start the arangodb docker container.
