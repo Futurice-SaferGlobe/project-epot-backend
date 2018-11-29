@@ -1,5 +1,9 @@
 import { queryOperation, queryOperations } from '@/models/operationModel'
-import { queryConnection, queryConnections } from '@/models/connectionModel'
+import {
+  queryConnection,
+  queryConnections,
+  queryHeaderConn
+} from '@/models/connectionModel'
 
 /**
  * Because the indices in operations changed from number to string type, we need to convert it
@@ -31,6 +35,39 @@ export const resolvers = {
         throw err
       }
     },
+    operationHeader: async (_, { id, uid }) => {
+      try {
+        const opQuery = await queryOperation(id)
+        const connQuery = await queryHeaderConn(id, uid)
+
+        const headerQuery = opQuery.data.filter(h => h.uid === uid)[0]
+
+        if (headerQuery) {
+          return {
+            ...headerQuery,
+            connections: connQuery
+          }
+        }
+
+        if (!headerQuery) {
+          const subheaderQuery = opQuery.data
+            .map(({ subheaders }) => subheaders.filter(s => s.uid === uid)[0])
+            .filter(s => {
+              if (s && s.uid) {
+                return s.uid === uid
+              }
+            })[0]
+
+          return {
+            ...subheaderQuery,
+            connections: connQuery
+          }
+        }
+      } catch (err) {
+        throw err
+      }
+    },
+
     operationConnection: async (_, { id }) => {
       try {
         return await queryConnection(id)
@@ -49,18 +86,14 @@ export const resolvers = {
 
   Operation: {
     name: root => root.operation,
-    headers: (root, { index }) => {
-      return index
-        ? root.data.filter(d => d.index === numToString(index))
-        : root.data
+    headers: (root, { uid }) => {
+      return uid ? root.data.filter(d => d.uid === uid) : root.data
     }
   },
 
   OperationHeader: {
-    subheaders: (root, { index }) => {
-      return index
-        ? root.subheaders.filter(s => s.index === numToString(index))
-        : root.subheaders
+    subheaders: (root, { uid }) => {
+      return uid ? root.subheaders.filter(s => s.uid === uid) : root.subheaders
     }
   }
 }
