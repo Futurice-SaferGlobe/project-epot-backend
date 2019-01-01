@@ -22,7 +22,7 @@
             "index": "2",
             "uid": "POLPRI_SUB_VIPOPR",
             "title": "Viable political process",
-            "labels": [],
+            "labels": ["Key Learning"],
             "content": "A viable political process is vital for UN peace operations. The viability of a political process derives from whether it has been conceived of and planned in support of a political solution and whether it enjoys wide support among political decision-making bodies and other actors with a vested interest in ending a conflict. The legitimacy and credibility of the peace operation is affected by the degree to which its activities are supportive of and integrated into an overarching political process. Similarly, the overarching political process guides and supports coordination among partners. In sum, the political process provides (or should provide) the framework that ensures coherence among the activities of various stakeholders and will affect issues such as prioritisation, sequencing, and division of labour. National ownership also impacts the viability and sustainability of a political process."
           },
           {
@@ -45,7 +45,7 @@
         "index": "2",
         "uid": "PEOCEN_TOP_HEADER",
         "title": "People-centred",
-        "labels": [],
+        "labels": ["Recently Changed"],
         "content": "Peace operations should implement a people-centred approach in support of the political process, which requires that they be responsive to the legitimate needs and desires of affected communities. Creating more responsive peace operations requires a shift in the focus of both UN headquarters and its member states. The people-centred approach suggests that community needs guide the political strategy and approaches of peace operations, and that local populations (including potentially marginalised groups) be engaged in mission analysis, planning, coordination, and performance assessment. It also looks at what safeguards are put in place to ensure peace operations do no harm and calls for a reorientation towards protecting and serving those that an operation has been mandated to assist.",
         "subheaders": [
           {
@@ -96,21 +96,21 @@
         "index": "3",
         "uid": "WOPESE_TOP_HEADER",
         "title": "Women, peace & security",
-        "labels": [],
+        "labels": ["Recently Changed"],
         "content": "The women, peace and security (WPS) agenda has two main dimensions. It addresses internal aspects of how the operation integrates WPS goals into its plans and performance system as well as how the leadership implements a gendered approach in its interaction with local and national stakeholders. For a peace operation, promoting the WPS agenda also entails prioritising the prevention of and response to sexual exploitation and abuse (SEA) and incorporating conflict-related sexual violence into its protection strategy. The WPS agenda also deals with external aspects, such as how conflict impacts men, women, girls and boys differently and how access to elements of a peace process varies. Emphasis placed on women’s agency (rather than viewing women as only victims of a conflict) encourages inclusion on multiple levels of activity.",
         "subheaders": [
           {
             "index": "1",
             "uid": "WOPESE_SUB_GENMAI",
             "title": "Gender mainstreaming",
-            "labels": [],
+            "labels": ["Key Learning"],
             "content": "Gender considerations are (or should be) mainstreamed into all measures to ensure security and promote stability, including mission plans and the performance system. Gender mainstreaming requires certain structures and competencies in operations. Of special interest in gender mainstreaming are the male-to-female ratio of staff, the placement of women in an operation, the existence of dedicated functions such as gender units, advisers or focal points to drive forward the WPS strategy and specific in-mission gender training, as well as qualitative or quantitative evidence of gender mainstreaming in an operation’s organisational culture."
           },
           {
             "index": "2",
             "uid": "WOPESE_SUB_IMCOWO",
             "title": "Impact of conflict on women",
-            "labels": [],
+            "labels": ["Key Success"],
             "content": "Conflict impacts different groups differently. Developing a differentiated understanding of how conflict impacts women, girls, men and boys and their respective roles in society is necessary for implementing the WPS agenda. Conflicts often exacerbate pre-existing inequalities by, for example, restricting women’s ownership of land, reducing access to education, and increasing child marriage or maternal mortality, resulting in long-lasting consequences. In practice, minimising the negative impact of conflict on women requires consideration of the gender perspective throughout a peace operation’s efforts at conflict prevention and management."
           },
           {
@@ -330,7 +330,7 @@
             "index": "2",
             "uid": "PROSTA_SUB_HURIVI",
             "title": "Human rights violations / impunity",
-            "labels": [],
+            "labels": ["Constantly Changing"],
             "content": "Conflicts are often accompanied by serious human rights violations and impunity for the perpetrators. Peace operations engage in a host of activities, ranging from protecting and promoting human rights through long-term measures, such as strengthening human rights laws and associated legal practices, to ensuring that perpetrators are dealt with appropriately and associated grievances are addressed. As part of their shorter-term protection and stabilisation remit, tasks include monitoring human rights, empowering populations to demand respect for their rights, and enabling government institutions to fulfil their human rights commitments."
           },
           {

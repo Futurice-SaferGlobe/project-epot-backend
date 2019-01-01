@@ -38,6 +38,7 @@ export const typeDefs = gql`
   type OperationSubHeader {
     uid: ID!
     index: Int!
+    labels: [String]
     title: String
     content: String
   }
