@@ -1,6 +1,6 @@
 [
   {
-    "operation": "TEST",
+    "operation": "FUTUTEST",
     "area": "Finland",
     "internalId": "fututest",
     "data": [
@@ -235,23 +235,23 @@
           {
             "index": "1",
             "uid": "WOPESE_SUB_GENEQU",
-            "title": "Gender equality",
+            "title": "Gender mainstreaming",
             "labels": [],
-            "content": ""
+            "content": "Gender mainstreaming means that gender considerations are (or should be) mainstreamed into all measures to ensure security and promote stability, including mission plans and the performance system. Gender mainstreaming requires certain structures and competencies in a peace operation. Of special interest in gender mainstreaming are the male-to-female ratio of staff, the placement of women in an operation, the existence of dedicated functions such as gender units, advisers or focal points to drive forward the WPS strategy and specific in-mission gender training, as well as qualitative or quantitative evidence of gender mainstreaming in an operation’s organisational culture."
           },
           {
             "index": "2",
             "uid": "WOPESE_SUB_PARWOM",
-            "title": "Participation of women in decision making",
+            "title": "Participation of women",
             "labels": [],
-            "content": ""
+            "content": "The participation of women is a key tenet of the women, peace and security (WPS) agenda. Participation of women in peace operations can range from mediation efforts to the design and implementation of the disarmament, demobilisation and reintegration campaigns can take place at different levels, from grassroots to senior government, in different areas, from social, political to economic and others, and can be formal or informal. Ensuring participation of women requires a detailed understanding of the conflict, as women may be less visible in public spaces at first sight."
           },
           {
             "index": "3",
             "uid": "WOPESE_SUB_GENCON",
             "title": "Gendered conflict analysis",
             "labels": [],
-            "content": ""
+            "content": "Gendered conflict analysis: Conflict impacts different groups differently. Developing a differentiated understanding of how conflict impacts women, girls, men and boys and their respective roles in society is necessary for implementing the WPS agenda. Conflicts often exacerbate pre-existing inequalities by, for example, restricting women’s ownership of land, reducing access to education, and increasing child marriage or maternal mortality, resulting in long-lasting consequences. In practice, minimising the negative impact of conflict on women requires consideration of the gender perspective throughout a peace operation’s efforts at conflict prevention and management."
           },
           {
             "index": "4",
@@ -263,9 +263,9 @@
           {
             "index": "5",
             "uid": "WOPESE_SUB_SGBCRS",
-            "title": "SGBV and CRSV",
+            "title": "Preventing SGBV and CRSV",
             "labels": [],
-            "content": ""
+            "content": "Protection sexual and gender-based violence (SGBV) and conflict-related sexual violence (CRSV) Preventing CRSV and SGBV: The protection of women and men from sexual and gender-based/conflict-related sexual violence (SGBV/CRSV) during and after the armed conflict is an essential part of the UN’s protection agenda. Preventing and addressing SGBV/CRSV is an integrated and prioritised element in a peace operation’s protection strategy."
           }
         ]
       }
