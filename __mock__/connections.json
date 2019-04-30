@@ -4,607 +4,632 @@
     "connections":[
       {
         "from":"POLPRI_SUB_VIPOPR",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"PEOCEN_SUB_NATLOC",
         "type":"connection"
       },
       {
         "from":"POLPRI_SUB_VIPOPR",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"PEOCEN_SUB_COMENG",
         "type":"connection"
       },
       {
         "from":"POLPRI_SUB_VIPOPR",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"LEGCRE_SUB_LEGITI",
         "type":"connection"
       },
       {
         "from":"POLPRI_SUB_VIPOPR",
-        "to":"COOHOR_TOP_HEADER",
+        "to":"LEGCRE_SUB_CREDIB",
         "type":"connection"
       },
       {
         "from":"POLPRI_SUB_VIPOPR",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"COOHOR_SUB_EXTCOH",
+        "type":"connection"
+      },
+      {
+        "from":"POLPRI_SUB_VIPOPR",
+        "to":"COOHOR_SUB_REGINV",
+        "type":"connection"
+      },
+      {
+        "from":"POLPRI_SUB_VIPOPR",
+        "to":"COOHOR_SUB_BILINT",
+        "type":"connection"
+      },
+      {
+        "from":"POLPRI_SUB_VIPOPR",
+        "to":"COOHOR_SUB_EXTSCE",
         "type":"connection"
       },
       {
         "from":"POLPRI_SUB_POLDIR",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"REALMAN_SUB_CONGRU",
         "type":"connection"
       },
       {
         "from":"POLPRI_SUB_POLDIR",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"REALMAN_SUB_CAPABI",
         "type":"connection"
       },
       {
         "from":"POLPRI_SUB_POLDIR",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"COOHOR_SUB_SYSCOH",
         "type":"connection"
       },
       {
         "from":"POLPRI_SUB_POLDIR",
-        "to":"COOHOR_TOP_HEADER",
+        "to":"COOHOR_SUB_FRACOO",
         "type":"connection"
       },
       {
         "from":"POLPRI_SUB_POLDIR",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"COOHOR_SUB_REGINV",
+        "type":"connection"
+      },
+      {
+        "from":"POLPRI_SUB_POLDIR",
+        "to":"COOHOR_SUB_BILINT",
+        "type":"connection"
+      },
+      {
+        "from":"POLPRI_SUB_POLDIR",
+        "to":"PEOCEN_SUB_NATLOC",
+        "type":"connection"
+      },
+      {
+        "from":"POLPRI_SUB_POLDIR",
+        "to":"POLPRI_SUB_VIPOPR",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_CONGRU",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"REALMAN_SUB_CAPABI",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_CONGRU",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"PEOCEN_SUB_ABSCAP",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_CONGRU",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"COOHOR_SUB_SYSCOH",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_CONGRU",
-        "to":"COOHOR_TOP_HEADER",
+        "to":"COOHOR_SUB_EXTSCE",
+        "type":"connection"
+      },
+      {
+        "from":"REALMAN_SUB_RELEVA",
+        "to":"PEOCEN_SUB_NATLOC",
+        "type":"connection"
+      },
+      {
+        "from":"REALMAN_SUB_RELEVA",
+        "to":"PEOCEN_SUB_COMENG",
+        "type":"connection"
+      },
+      {
+        "from":"REALMAN_SUB_RELEVA",
+        "to":"PEOCEN_SUB_ELICAP",
+        "type":"connection"
+      },
+      {
+        "from":"REALMAN_SUB_RELEVA",
+        "to":"LEGCRE_SUB_INTUNT",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_CONGRU",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"LEGCRE_SUB_CREDIB",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_RELEVA",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"COOHOR_SUB_EXTSCE",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_RELEVA",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"WOPESE_SUB_GENCON",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_RELEVA",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"WOPESE_SUB_EARWAR",
+        "type":"connection"
+      },
+      {
+        "from":"REALMAN_SUB_CAPABI",
+        "to":"WOPESE_SUB_GENEQU",
+        "type":"connection"
+      },
+      {
+        "from":"REALMAN_SUB_CAPABI",
+        "to":"LEGCRE_SUB_CREDIB",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_RELEVA",
-        "to":"COOHOR_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"REALMAN_SUB_RELEVA",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"LEGCRE_SUB_STRCOM",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_CAPABI",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"COOHOR_SUB_SYSCOH",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_CAPABI",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"COOHOR_SUB_FRACOO",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_CAPABI",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"COOHOR_SUB_EXTCOH",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_CAPABI",
-        "to":"COOHOR_TOP_HEADER",
+        "to":"COOHOR_SUB_BURSHA",
         "type":"connection"
       },
       {
         "from":"REALMAN_SUB_CAPABI",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"WOPESE_SUB_SGBCRS",
         "type":"connection"
       },
       {
         "from":"PEOCEN_SUB_NATLOC",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"PEOCEN_SUB_NONSTA",
         "type":"connection"
       },
       {
         "from":"PEOCEN_SUB_NATLOC",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"PEOCEN_SUB_COMENG",
         "type":"connection"
       },
       {
         "from":"PEOCEN_SUB_NATLOC",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"PEOCEN_SUB_ABSCAP",
         "type":"connection"
       },
       {
         "from":"PEOCEN_SUB_NATLOC",
-        "to":"COOHOR_TOP_HEADER",
+        "to":"PEOCEN_SUB_ELICAP",
         "type":"connection"
       },
       {
         "from":"PEOCEN_SUB_NATLOC",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"PEOCEN_SUB_FRASOC",
         "type":"connection"
       },
       {
-        "from":"PEOCEN_SUB_COMENG",
-        "to":"POLPRI_TOP_HEADER",
+        "from":"PEOCEN_SUB_NATLOC",
+        "to":"LEGCRE_SUB_CREDIB",
         "type":"connection"
       },
       {
-        "from":"PEOCEN_SUB_COMENG",
-        "to":"REALMAN_TOP_HEADER",
+        "from":"PEOCEN_SUB_NATLOC",
+        "to":"COOHOR_SUB_FRACOO",
         "type":"connection"
       },
       {
-        "from":"PEOCEN_SUB_COMENG",
-        "to":"LEGCRE_TOP_HEADER",
+        "from":"PEOCEN_SUB_NATLOC",
+        "to":"COOHOR_SUB_REGINV",
         "type":"connection"
       },
       {
-        "from":"PEOCEN_SUB_COMENG",
-        "to":"COOHOR_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_COMENG",
-        "to":"WOPESE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_ABSCAP",
-        "to":"POLPRI_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_ABSCAP",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_ABSCAP",
-        "to":"LEGCRE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_ABSCAP",
-        "to":"COOHOR_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_ABSCAP",
-        "to":"WOPESE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_ELICAP",
-        "to":"POLPRI_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_ELICAP",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_ELICAP",
-        "to":"LEGCRE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_ELICAP",
-        "to":"COOHOR_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_ELICAP",
-        "to":"WOPESE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_FRASOC",
-        "to":"POLPRI_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_FRASOC",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_FRASOC",
-        "to":"LEGCRE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_FRASOC",
-        "to":"COOHOR_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"PEOCEN_SUB_FRASOC",
-        "to":"WOPESE_TOP_HEADER",
+        "from":"PEOCEN_SUB_NATLOC",
+        "to":"WOPESE_SUB_PARWOM",
         "type":"connection"
       },
       {
         "from":"PEOCEN_SUB_NONSTA",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"PEOCEN_SUB_COMENG",
         "type":"connection"
       },
       {
         "from":"PEOCEN_SUB_NONSTA",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"PEOCEN_SUB_FRASOC",
         "type":"connection"
       },
       {
         "from":"PEOCEN_SUB_NONSTA",
-        "to":"COOHOR_TOP_HEADER",
+        "to":"LEGCRE_SUB_STRCOM",
         "type":"connection"
       },
       {
         "from":"PEOCEN_SUB_NONSTA",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"LEGCRE_SUB_INTUNT",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_NONSTA",
+        "to":"COOHOR_SUB_EXTSCE",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_NONSTA",
+        "to":"WOPESE_SUB_EARWAR",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_COMENG",
+        "to":"PEOCEN_SUB_FRASOC",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_COMENG",
+        "to":"LEGCRE_SUB_STRCOM",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_COMENG",
+        "to":"WOPESE_SUB_PARWOM",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_COMENG",
+        "to":"WOPESE_SUB_GENCON",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_COMENG",
+        "to":"WOPESE_SUB_EARWAR",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ABSCAP",
+        "to":"LEGCRE_SUB_INTUNT",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ABSCAP",
+        "to":"COOHOR_SUB_EXTCOH",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ABSCAP",
+        "to":"COOHOR_SUB_BILINT",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ABSCAP",
+        "to":"WOPESE_SUB_PARWOM",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ELICAP",
+        "to":"LEGCRE_SUB_LEGITI",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ELICAP",
+        "to":"LEGCRE_SUB_INTUNT",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ELICAP",
+        "to":"COOHOR_SUB_FRACOO",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ELICAP",
+        "to":"WOPESE_SUB_PARWOM",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_FRASOC",
+        "to":"LEGCRE_SUB_STRCOM",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_FRASOC",
+        "to":"LEGCRE_SUB_INTUNT",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_LEGITI",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"PEOCEN_SUB_NATLOC",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_LEGITI",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"LEGCRE_SUB_MISCON",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_LEGITI",
-        "to":"PEOCEN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"LEGCRE_SUB_LEGITI",
-        "to":"COOHOR_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"LEGCRE_SUB_LEGITI",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"PEOCEN_SUB_COMENG",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_CREDIB",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"LEGCRE_SUB_LEGITI",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_CREDIB",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"COOHOR_SUB_SYSCOH",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_CREDIB",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"COOHOR_SUB_EXTCOH",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_CREDIB",
-        "to":"COOHOR_TOP_HEADER",
+        "to":"WOPESE_SUB_GENEQU",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_CREDIB",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"LEGCRE_SUB_INTUNT",
+        "type":"connection"
+      },
+      {
+        "from":"LEGCRE_SUB_CREDIB",
+        "to":"LEGCRE_SUB_MISCON",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_STRCOM",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"LEGCRE_SUB_MISCON",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_STRCOM",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"LEGCRE_SUB_INTUNT",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_STRCOM",
-        "to":"PEOCEN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"LEGCRE_SUB_STRCOM",
-        "to":"COOHOR_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"LEGCRE_SUB_STRCOM",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"WOPESE_SUB_GENCON",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_MISCON",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"REALMAN_SUB_CAPABI",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_MISCON",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"LEGCRE_SUB_INTUNT",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"LEGCRE_SUB_INTUNT",
-        "to":"PEOCEN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"LEGCRE_SUB_INTUNT",
-        "to":"COOHOR_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"LEGCRE_SUB_INTUNT",
-        "to":"WOPESE_TOP_HEADER",
+        "to":"WOPESE_SUB_GENEQU",
         "type":"connection"
       },
       {
         "from":"LEGCRE_SUB_MISCON",
-        "to":"COOHOR_TOP_HEADER",
+        "to":"LEGCRE_SUB_INTUNT",
         "type":"connection"
       },
       {
-        "from":"LEGCRE_SUB_MISCON",
-        "to":"WOPESE_TOP_HEADER",
+        "from":"LEGCRE_SUB_INTUNT",
+        "to":"WOPESE_SUB_GENCON",
+        "type":"connection"
+      },
+      {
+        "from":"LEGCRE_SUB_INTUNT",
+        "to":"COOHOR_SUB_EXTCOH",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_SYSCOH",
-        "to":"POLPRI_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_SYSCOH",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_SYSCOH",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"COOHOR_SUB_FRACOO",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_EXTCOH",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"COOHOR_SUB_FRACOO",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_EXTCOH",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"COOHOR_SUB_REGINV",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_EXTCOH",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"COOHOR_SUB_BILINT",
+        "type":"connection"
+      },
+      {
+        "from":"COOHOR_SUB_EXTCOH",
+        "to":"COOHOR_SUB_BURSHA",
+        "type":"connection"
+      },
+      {
+        "from":"COOHOR_SUB_EXTCOH",
+        "to":"REALMAN_SUB_CONGRU",
+        "type":"connection"
+      },
+      {
+        "from":"COOHOR_SUB_EXTCOH",
+        "to":"POLPRI_SUB_POLDIR",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_FRACOO",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"COOHOR_SUB_BURSHA",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_FRACOO",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_FRACOO",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"WOPESE_SUB_PARWOM",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_REGINV",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"COOHOR_SUB_BURSHA",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_REGINV",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_REGINV",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"COOHOR_SUB_EXTSCE",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_BILINT",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"COOHOR_SUB_FRACOO",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_BILINT",
-        "to":"POLPRI_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_BURSHA",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"COOHOR_SUB_BURSHA",
         "type":"connection"
       },
       {
         "from":"COOHOR_SUB_EXTSCE",
-        "to":"PEOCEN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_EXTSCE",
-        "to":"POLPRI_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_EXTSCE",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_SYSCOH",
-        "to":"LEGCRE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_SYSCOH",
-        "to":"WOPESE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_EXTSCE",
-        "to":"LEGCRE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_EXTSCE",
-        "to":"WOPESE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_FRACOO",
-        "to":"WOPESE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_EXTCOH",
-        "to":"LEGCRE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_REGINV",
-        "to":"LEGCRE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_BILINT",
-        "to":"LEGCRE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"COOHOR_SUB_BURSHA",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"PEOCEN_SUB_COMENG",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_GENEQU",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"WOPESE_SUB_PARWOM",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_GENEQU",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"WOPESE_SUB_GENCON",
+        "type":"connection"
+      },
+      {
+        "from":"WOPESE_SUB_GENEQU",
+        "to":"WOPESE_SUB_SGBCRS",
+        "type":"connection"
+      },
+      {
+        "from":"WOPESE_SUB_PARWOM",
+        "to":"WOPESE_SUB_GENCON",
+        "type":"connection"
+      },
+      {
+        "from":"WOPESE_SUB_PARWOM",
+        "to":"WOPESE_SUB_EARWAR",
+        "type":"connection"
+      },
+      {
+        "from":"WOPESE_SUB_PARWOM",
+        "to":"WOPESE_SUB_SGBCRS",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_GENCON",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"WOPESE_SUB_SGBCRS",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_GENCON",
-        "to":"REALMAN_TOP_HEADER",
+        "to":"WOPESE_SUB_EARWAR",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_GENCON",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"PEOCEN_SUB_FRASOC",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_GENCON",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"PEOCEN_SUB_NATLOC",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_GENCON",
-        "to":"COOHOR_TOP_HEADER",
+        "to":"POLPRI_SUB_VIPOPR",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_EARWAR",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"WOPESE_SUB_SGBCRS",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_EARWAR",
-        "to":"PEOCEN_TOP_HEADER",
+        "to":"LEGCRE_SUB_CREDIB",
         "type":"connection"
       },
       {
-        "from":"WOPESE_SUB_EARWAR",
-        "to":"REALMAN_TOP_HEADER",
+        "from":"PEOCEN_SUB_NATLOC",
+        "to":"REALMAN_SUB_CONGRU",
+        "type":"connection"
+      },
+      {
+        "from":"POLPRI_SUB_VIPOPR",
+        "to":"WOPESE_SUB_PARWOM",
+        "type":"connection"
+      },
+      {
+        "from":"POLPRI_SUB_POLDIR",
+        "to":"REALMAN_SUB_RELEVA",
+        "type":"connection"
+      },
+      {
+        "from":"REALMAN_SUB_CONGRU",
+        "to":"LEGCRE_SUB_LEGITI",
+        "type":"connection"
+      },
+      {
+        "from":"REALMAN_SUB_CONGRU",
+        "to":"COOHOR_SUB_FRACOO",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_COMENG",
+        "to":"PEOCEN_SUB_ABSCAP",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ABSCAP",
+        "to":"COOHOR_SUB_SYSCOH",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ABSCAP",
+        "to":"PEOCEN_SUB_ELICAP",
+        "type":"connection"
+      },
+      {
+        "from":"PEOCEN_SUB_ABSCAP",
+        "to":"PEOCEN_SUB_FRASOC",
+        "type":"connection"
+      },
+      {
+        "from":"LEGCRE_SUB_LEGITI",
+        "to":"LEGCRE_SUB_STRCOM",
+        "type":"connection"
+      },
+      {
+        "from":"LEGCRE_SUB_LEGITI",
+        "to":"LEGCRE_SUB_INTUNT",
+        "type":"connection"
+      },
+      {
+        "from":"LEGCRE_SUB_INTUNT",
+        "to":"COOHOR_SUB_SYSCOH",
+        "type":"connection"
+      },
+      {
+        "from":"LEGCRE_SUB_INTUNT",
+        "to":"COOHOR_SUB_EXTSCE",
+        "type":"connection"
+      },
+      {
+        "from":"LEGCRE_SUB_LEGITI",
+        "to":"COOHOR_SUB_BURSHA",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_SGBCRS",
-        "to":"LEGCRE_TOP_HEADER",
+        "to":"PEOCEN_SUB_NONSTA",
         "type":"connection"
       },
       {
         "from":"WOPESE_SUB_SGBCRS",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"WOPESE_SUB_PARWOM",
-        "to":"COOHOR_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"WOPESE_SUB_PARWOM",
-        "to":"LEGCRE_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"WOPESE_SUB_PARWOM",
-        "to":"PEOCEN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"WOPESE_SUB_PARWOM",
-        "to":"REALMAN_TOP_HEADER",
-        "type":"connection"
-      },
-      {
-        "from":"WOPESE_SUB_PARWOM",
-        "to":"POLPRI_TOP_HEADER",
+        "to":"LEGCRE_SUB_CREDIB",
         "type":"connection"
       }
     ]
