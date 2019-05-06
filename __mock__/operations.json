@@ -54,13 +54,6 @@
             "title": "Capabilities",
             "labels": [],
             "content": "Capabilities refer to the personnel, material, resources and skills a peace operation requires to carry out and maintain its mandated task. A peace operation’s access to the right capabilities in the right quantity at the right time is important to its relevance, legitimacy, credibility, effectiveness and impact."
-          },
-          {
-            "index": "4",
-            "uid": "REALMAN_SUB_GENCON",
-            "title": "Gender considerations",
-            "labels": [],
-            "content": "Gender considerations are (or should be) mainstreamed into all measures to ensure security and promote stability, including mission plans and the performance system. Gender mainstreaming requires certain structures and competencies in a peace operation. Of special interest in gender mainstreaming are the male-to-female ratio of staff, the placement of women in an operation, the existence of dedicated functions such as gender units, advisers or focal points to drive forward the WPS strategy and specific in-mission gender training, as well as qualitative or quantitative evidence of gender mainstreaming in an operation’s organisational culture."
           }
         ]
       },
@@ -94,20 +87,13 @@
           },
           {
             "index": "4",
-            "uid": "PEOCEN_SUB_PARWOM",
-            "title": "Participation of women",
-            "labels": [],
-            "content": "The participation of women is a key tenet of the women, peace and security (WPS) agenda. Participation of women in peace operations can range from mediation efforts to the design and implementation of the disarmament, demobilisation and reintegration campaigns can take place at different levels, from grassroots to senior government, in different areas, from social, political to economic and others, and can be formal or informal. Ensuring participation of women requires a detailed understanding of the conflict, as women may be less visible in public spaces at first sight."
-          },
-          {
-            "index": "5",
             "uid": "PEOCEN_SUB_ABSCAP",
             "title": "Absorption capacity",
             "labels": [],
             "content": "Absorption capacity is the extent to which the local context can take on-board the assistance provided, in terms of expertise, capacity building and material support. The pace at which a peace operation expects an institution to develop or a process to unfold may be at odds with their ability to absorb the assistance provided and bring about the expected change. Associated challenges are exacerbated when external actors – from peace operations to bilateral actors and others – present in the conflict area provide contradictory or uncoordinated advice or assistance."
           },
           {
-            "index": "6",
+            "index": "5",
             "uid": "PEOCEN_SUB_ELICAP",
             "title": "Elite capture",
             "labels": [],
@@ -115,7 +101,7 @@
           }
           ,
           {
-            "index": "7",
+            "index": "6",
             "uid": "PEOCEN_SUB_FRASOC",
             "title": "Fragmentation of societies",
             "labels": [],
